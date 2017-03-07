@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>taula</title>
+</head>
+
+<body>
+    <!-- wrapper -->
+    <div id="wrapper">
+        <!-- panels -->
+        <div>
+            <p>panel 0</p>
+        </div>
+        <div>
+            <p>panel 1</p>
+        </div>
+        <div>
+            <p>panel 2</p>
+        </div>
+    </div>
+    <!-- 1) Load jQuery -->
+    <script src="./flicking-demo/js/jquery.min.js"></script>
+    <!-- 2) Load egjs All-in-one file merged with dependencies(Hammer.js + egjs components) -->
+    <script src="./flicking-demo/js/flicking.pkgd.min.js"></script>
+    <script>
+    $(document).ready(function($) {
+        // create flicking ui without option
+        $("#wrapper").flicking();
+    })
+    </script>
+</body>
+
+</html>

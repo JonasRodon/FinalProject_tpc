@@ -1,0 +1,34 @@
+{
+    "castells": [
+      { 
+      	"posicio": {"posX":1,"posY":1,"gposX":1,"gposY":1},
+        "puntuacioConcursDeCastells": 100,
+        "nomenclatura": "Pd4",
+        "sobrenom": "Titan",
+        "gamma": 6,
+        "mitjanaPonderadaTempsdExecucioCronometrat": 230,
+        "anyDeConsecucioAbsolutCastellCarregat": 1988,
+        "anyDeConsecucioAbsolutCastellDescarregat": 1989,
+        "anyDeConsecucioEnlEpocaModernaCastellCarregat": 2000,
+        "anyDeConsecucioEnlEpocaModernaCastellDescarregat": 2004,
+        "alçadaAproximadaDelCastell": 7.4,
+        "numdeCastellersOptim": 50,
+        "pesAproximatDelCastell": 2000,
+        "numCarregats": 200,
+        "numCastellsCaiguts": 400,
+        "numDeCastellsAssolits": 12000,
+        "numDeCastellsNoAssolits": 33000,
+        "numDeCollesQuelHanAssolitCastellCarregat": 10,
+        "numDeCollesQuelHanAssolitCastellDescarregat": 8,
+        "numDescarregats": 500,
+        "numIntens": 80000,
+        "numIntentsDesmuntats": 30000,
+        "numTotalAbsolut": 18000000,
+        "numTotalDeCollesQuelHanIntentat": 20,
+        "numTotalDeCollesQuelHandutaTerme": 12,
+        "collaPioneraEnAssolirElCastell": "Xiquets de Valls",
+        "colles": ["Xiquets","Capgrosos"],
+        "media": {"links":[],"videos":[],"Fotos":[]}
+      }
+    ]
+}

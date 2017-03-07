@@ -1,0 +1,123 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <title>eg.Flicking demo</title>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./js/flicking.pkgd.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <style>
+    body {
+        font-family: 'Noto Sans', sans-serif
+    }
+    
+    .flick {
+        height: 100%;
+        background-color: grey;
+    }
+    
+    .eg-flick-container > div {
+        height: 100%;
+        float: left;
+        display: block
+    }
+    
+    .eg-flick-panel p {
+        margin-top: 80px;
+        font-size: 2.0em;
+        text-align: center
+    }
+    
+    #vflick1.eg-flick-panel p {
+        margin-top: 0;
+        font-size: 2.0em;
+        text-align: center
+    }
+    
+    h4 span {
+        font-weight: normal
+    }
+    </style>
+</head>
+
+<body>
+    <div id="mflick1" class="flick">
+        <div id="item1" style="background-color:#CC66CC">
+            <div id="vflick1" class="flick">
+                <div id="item1" style="background-color:#CC66CC">
+                    <p>Layer 0</p>
+                </div>
+                <div id="item2" style="background-color:#66cccc">
+                    <p>Layer 1</p>
+                </div>
+                <div id="item3" style="background-color:#ffc000">
+                    <p>Layer 2</p>
+                </div>
+            </div>
+        </div>
+        <div id="item2" style="background-color:#66cccc">
+            <div id="vflick2" class="flick">
+                <div id="item1" style="background-color:#CC66CC">
+                    <p>Layer 0</p>
+                </div>
+                <div id="item2" style="background-color:#66cccc">
+                    <p>Layer 1</p>
+                </div>
+                <div id="item3" style="background-color:#ffc000">
+                    <p>Layer 2</p>
+                </div>
+            </div>
+        </div>
+        <div id="item3" style="background-color:#ffc000">
+            <p>Layer 2</p>
+        </div>
+    </div>
+    <script>
+    var f1 = new eg.Flicking($("#mflick1"), {
+        duration: 300,
+        circular: true,
+        defaultIndex: 1
+    });
+
+    // var vf1 = new eg.Flicking($("#vflick1"), {
+    //     duration: 300,
+    //     circular: true,
+    //     defaultIndex: 1,
+    //     horizontal: false
+    // });
+    // var vf2 = new eg.Flicking($("#vflick2"), {
+    //     duration: 300,
+    //     circular: true,
+    //     defaultIndex: 1,
+    //     horizontal: false
+    // });
+
+    function inici(n) {
+        for (var i = 1; i <= n; i++) {
+            var box = 'vf' + i
+            var selection = '#vflick' + i
+            console.log(selection)
+            box = new eg.Flicking($(selection), {
+                duration: 300,
+                circular: true,
+                defaultIndex: 1,
+                horizontal: false
+            })
+        }
+    }
+    inici(2)
+        // var f2 = new eg.Flicking($("#mflick2"), {
+        //     duration: 300,
+        //     circular: true
+        // });
+
+    // var vf2 = new eg.Flicking($("#vflick2"), {
+    //     duration: 300,
+    //     circular: true,
+    //     horizontal: false
+    // });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span>Taula periòdica castellera</span><br><br></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#">Inici</a>
+                    </li>
+                    <li>
+                        <a href="login.html">logout<br></a>
+                    </li>
+                    <li>
+                        <a href="#">Contacte<br></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Crear nou Castell</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Omple el formulari per definir un nou castell.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="puntuacioConcursDeCastells" class="control-label">Puntuació Concurs de Castells</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="puntuacioConcursDeCastells" placeholder="Puntuació Concurs de Castells">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="nomenclatura" class="control-label" contenteditable="true">Nomenclatura</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="nomenclatura" placeholder="Nomenclatura">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="sobrenom" class="control-label" contenteditable="true">Sobrenom</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="sobrenom" placeholder="Sobrenom">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="sel1">Gamma</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" id="sel1">
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>extra</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="mitjanaPonderadaTempsdExecucioCronometrat" class="control-label" contenteditable="true">Mitjana Ponderada Temps d'Execució Cronometrat</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="anyDeConsecucioAbsolutCastellCarregat" placeholder="Mitjana Ponderada Temps d'Execucio Cronometrat">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="anyDeConsecucioAbsolutCastellCarregat" class="control-label" contenteditable="true">Any de consecució absolut Castell Carregat</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text"  class="form-control datepicker" id="anyDeConsecucioAbsolutCastellCarregat" placeholder="Any de consecució absolut Castell Carregat">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="anyDeConsecucioAbsolutCastellDescarregat" class="control-label" contenteditable="true">Any de consecució absolut Castell Descarregat</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="anyDeConsecucioAbsolutCastellDescarregat" placeholder="Any de consecució absolut Castell Descarregat">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="anyDeConsecucioEnlEpocaModernaCastellCarregat" class="control-label" contenteditable="true">Any de consecució en l'epoca moderna Castell Carregat</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="anyDeConsecucioEnlEpocaModernaCastellCarregat" placeholder="Any de consecució en l'epoca moderna Castell Carregat">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="anyDeConsecucioEnlEpocaModernaCastellDescarregat" class="control-label" contenteditable="true">Any de consecució en l'epoca moderna Castell Descarregat</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="anyDeConsecucioEnlEpocaModernaCastellDescarregat" placeholder="Any de consecució en l'epoca moderna Castell Descarregat">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="alçadaAproximadaDelCastell" class="control-label" contenteditable="true">Alçada aproximada del Castell</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="alçadaAproximadaDelCastell" placeholder="Alçada aproximada del Castell">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="numdeCastellersOptim" class="control-label" contenteditable="true">Numero de Castellers òptim</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="numdeCastellersOptim" placeholder="Numero de Castellers òptim">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="pesAproximatDelCastell" class="control-label" contenteditable="true">Pes aproximat del Castell</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="pesAproximatDelCastell" placeholder="Pes aproximat del Castell">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="numCarregats" class="control-label" contenteditable="true">Numero de Carregats</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="numCarregats" placeholder="Numero de Carregats">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="numCastellsCaiguts" class="control-label" contenteditable="true">Numero de Castells Caiguts</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="numCastellsCaiguts" placeholder="Numero de Castells Caiguts">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="numDeCastellsAssolits" class="control-label" contenteditable="true">Numero de Castells assolits</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="numDeCastellsAssolits" placeholder="Numero de Castells assolits">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="numDeCastellsNoAssolits" class="control-label" contenteditable="true">Numero de Castells no assolits</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="numDeCastellsNoAssolits" placeholder="Numero de Castells no assolits">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="numDeCollesQuelHanAssolitCastellCarregat" class="control-label" contenteditable="true">Numero de colles que l'han assolit Castell carregat</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="numDeCollesQuelHanAssolitCastellCarregat" placeholder="Numero de colles que l'han assolit Castell carregat">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="numDeCollesQuelHanAssolitCastellDescarregat" class="control-label" contenteditable="true">Numero de Colles quel'han assolit Castell descarregat</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="numDeCollesQuelHanAssolitCastellDescarregat" placeholder="Numero de Colles quel'han assolit Castell descarregat">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="numDescarregats" class="control-label" contenteditable="true">Numero descarregats</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="numDescarregats" placeholder="Numero descarregats">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="numIntens" class="control-label" contenteditable="true">Numero d'intents</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="numIntens" placeholder="Numero d'intents">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="numIntentsDesmuntats" class="control-label" contenteditable="true">Numero Numero intents desmuntats</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="numIntentsDesmuntats" placeholder="Numero Numero intents desmuntats">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="numTotalAbsolut" class="control-label" contenteditable="true">Numero total absolut</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="numTotalAbsolut" placeholder="Numero total absolut">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="numTotalDeCollesQuelHanIntentat" class="control-label" contenteditable="true">Numero total de Colles que l'han intentat</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="numTotalDeCollesQuelHanIntentat" placeholder="Numero total de Colles que l'han intentat">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="numTotalDeCollesQuelHandutaTerme" class="control-label" contenteditable="true">Numero total de Colles que l'han dut a terme</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="numTotalDeCollesQuelHandutaTerme" placeholder="Numero total de Colles que l'han dut a terme">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label for="collaPioneraEnAssolirElCastell" class="control-label" contenteditable="true">Colla pionera en assolir el castell</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="collaPioneraEnAssolirElCastell" placeholder="Colla pionera en assolir el castell">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <label class="control-label">Marca les colles que l'han assolit</label>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" id="colles">
+                                                    <option>Marca les colles que l'han assolit</option>
+                                                    <option>Xiquets de Valls</option>
+                                                    <option>Cap grossos de Mataro</option>
+                                                    <option>CCFigueres</option>
+                                                    <option>Vilafranca</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <button type="submit" class="btn btn-default">Afegir nou Castell</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="btn btn-lg btn-primary">llistat de Castells</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-3 text-center">
+                    <a><i class="fa fa-5x fa-fw fa-instagram"></i></a>
+                </div>
+                <div class="col-xs-3">
+                    <a><i class="fa fa-5x fa-fw fa-twitter"></i></a>
+                </div>
+                <div class="col-xs-3">
+                    <a><i class="fa fa-5x fa-fw fa-facebook"></i></a>
+                </div>
+                <div class="col-xs-3 text-center">
+                    <a><i class="fa fa-5x fa-fw fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+    $('.datepicker').datepicker({
+        format: 'yyyy',
+        viewMode: 'years',
+        minViewMode: "years"
+    })
+    </script>
+</body>
+
+</html>
