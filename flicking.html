@@ -1,34 +1,169 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>taula</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <title>eg.Flicking demo</title>
+    <script src="./flicking-demo/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./flicking-demo/js/flicking.pkgd.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <style>
+    body {
+        font-family: 'Noto Sans', sans-serif
+    }
+    
+    .flick {
+        height: 100%;
+        background-color: grey;
+    }
+    
+    .eg-flick-container > div {
+        height: 100%;
+        float: left;
+        display: block
+    }
+    
+    .eg-flick-panel p {
+        margin-top: 80px;
+        font-size: 2.0em;
+        text-align: center
+    }
+    
+    #vflick1.eg-flick-panel p {
+        margin-top: 0;
+        font-size: 2.0em;
+        text-align: center
+    }
+    
+    #run {
+        z-index: 100000;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    
+    #run2 {
+        z-index: 100000;
+        position: absolute;
+        left: 80px;
+        top: 10px;
+    }
+    
+    h4 span {
+        font-weight: normal
+    }
+    </style>
 </head>
 
 <body>
-    <!-- wrapper -->
-    <div id="wrapper">
-        <!-- panels -->
-        <div>
-            <p>panel 0</p>
+    <div id="mflick1" class="flick">
+        <div id="item1" style="background-color:#CC66CC">
+            <div id="vflick1" class="flick">
+                <div id="item1" style="background-color:#CC66CC">
+                    <p>Layer 0</p>
+                </div>
+                <div id="item2" style="background-color:#66cccc">
+                    <p>Layer 1</p>
+                </div>
+                <div id="item3" style="background-color:#ffc000">
+                    <p>Layer 2</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>panel 1</p>
+        <div id="item2" style="background-color:#66cccc">
+            <div id="vflick2" class="flick">
+                <div id="item1" style="background-color:#CC66CC">
+                    <p>Layer 0</p>
+                </div>
+                <div id="item2" style="background-color:#66cccc">
+                    <p>Layer 1</p>
+                </div>
+                <div id="item3" style="background-color:#ffc000">
+                    <p>Layer 2</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>panel 2</p>
+        <div id="item3" style="background-color:#ffc000">
+            <p>Layer 2</p>
         </div>
     </div>
-    <!-- 1) Load jQuery -->
-    <script src="./flicking-demo/js/jquery.min.js"></script>
-    <!-- 2) Load egjs All-in-one file merged with dependencies(Hammer.js + egjs components) -->
-    <script src="./flicking-demo/js/flicking.pkgd.min.js"></script>
+    <button id="run" onclick="f1.next(0)">run</button>
+    <button id="run2" onclick="box.nextAll(0)">run2</button>
     <script>
-    $(document).ready(function($) {
-        // create flicking ui without option
-        $("#wrapper").flicking();
-    })
+    var elLog1 = $("#log1"),
+        elLog2 = $('#log2'),
+        i = 1;
+
+    function methodLog(el, v) {
+        var arr = [];
+
+        if (typeof v == "object") {
+            v.each(function(i) {
+                arr.push($(this).find("p").html());
+            })
+        } else {
+            arr = [v];
+        }
+
+        elLog1.html(el.innerHTML + " ==> " + arr.join(", "));
+    }
+
+    function getDirection(dir) {
+        console.log(dir);
+        switch (dir) {
+            case eg.DIRECTION_RIGHT:
+                return "→";
+            case eg.DIRECTION_LEFT:
+                return "←";
+            case eg.DIRECTION_UP:
+                return "↑";
+            case eg.DIRECTION_DOWN:
+                return "↓";
+        }
+    }
+
+    function log(e) {
+        var direction = getDirection(e.direction),
+            msg = [i++, "<span class=red>" + e.eventType + "</span>", direction, e.no].join(" : ");
+
+        elLog2.html(msg + "<br>" + elLog2.html());
+    }
+
+    // var f5 = new eg.Flicking($("#vflick1"), {
+    //     duration: 0,
+    //     threshold: 50,
+    //     circular: true
+    // }).on({
+    //     touchStart: log,
+    //     touchMove: log,
+    //     touchEnd: log,
+    //     flickStart: log,
+    //     flick: log,
+    //     flickEnd: log,
+    //     flickStart: log,
+    //     beforeRestore: log,
+    //     restore: log
+    // });
+    var f1 = new eg.Flicking($("#mflick1"), {
+        duration: 300,
+        circular: true,
+        defaultIndex: 1
+    });
+
+
+    var n = 2
+    for (var i = 1; i <= n; i++) {
+        var box = 'vf' + i
+        var selection = 'vflick' + i
+        console.log(selection)
+        box = new eg.Flicking($('#' + selection), {
+            duration: 300,
+            circular: true,
+            defaultIndex: 1,
+            horizontal: false
+        })
+
+    }
     </script>
 </body>
 
