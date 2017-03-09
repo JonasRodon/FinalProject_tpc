@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="62.50000762939453"
+   height="62.5"
+   viewBox="39.4654 119.673 62.5 62.5"
+   id="svg3815"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="pilars.svg"
+   inkscape:export-filename="/home/skylab/Escriptori/tpc-mokap/pilars.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata3825">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3823" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="833"
+     inkscape:window-height="480"
+     id="namedview3821"
+     showgrid="false"
+     inkscape:zoom="3.776"
+     inkscape:cx="31.250004"
+     inkscape:cy="31.25"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3815"
+     showguides="false" />
+  <g
+     id="g22207-9"
+     transform="matrix(1.25, 0, 0, -1.25, -1070.724437713623, 1753.4363203048706)">
+    <rect
+       transform="scale(1,-1)"
+       y="-1307.0103"
+       x="888.15192"
+       height="50"
+       width="50"
+       id="rect20950-5-2"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <g
+       style="fill:#ffffff"
+       id="g16722-0"
+       transform="matrix(0.42457952,0,0,0.42457952,916.90037,1282.0086)">
+      <path
+         d="m 0,0 c 0,7.433 -3.954,13.449 -8.829,13.449 -4.877,0 -8.828,-6.016 -8.828,-13.449 0,-7.423 3.951,-13.441 8.828,-13.441 C -3.954,-13.441 0,-7.423 0,0"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path16724-2" />
+    </g>
+  </g>
+</svg>
