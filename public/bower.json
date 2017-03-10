@@ -1,0 +1,24 @@
+{
+  "name": "public",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jonas Rodon <jonasrodon@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/JonasRodon/FinalProject_tpc",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower-components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "font-awsome#^4.7.0",
+    "bxslider-4": "bxSlider#v4.2.4",
+    "iscroll": "^5.2.0"
+  }
+}
