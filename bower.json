@@ -2,11 +2,21 @@
   "name": "public",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "dev": "nodemon app",
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "start": "node app"
+  },
   "authors": [
     "Jonas Rodon <jonasrodon@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/JonasRodon/FinalProject_tpc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonasRodon/FinalProject_tpc"
+  },
+  "heroku": "https://fathomless-plateau-70132.herokuapp.com/",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -20,5 +30,8 @@
     "font-awesome": "font-awsome#^4.7.0",
     "bxslider-4": "bxSlider#v4.2.4",
     "iscroll": "^5.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
