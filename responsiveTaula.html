@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <style>
         * {
         -webkit-box-sizing: border-box;
@@ -21,7 +22,11 @@
     body {
         font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
         color: #5e5d52;
+        /*overflow: hidden;*/
+
+        /*overflow-x: hidden;*/
     }
+       
     
     a {
         color: #337aa8;
@@ -32,20 +37,25 @@
         color: #4b8ab2;
     }
     
-    .container {
-        margin: 5% 3%;
+    .container2 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    .container2 {
+        width: 100%;
+        max-width: 100%;
     }
     
     @media (min-width: 48em) {
-        .container {
-            margin: 2%;
+        .container2 {
+            max-width: 64px;
         }
     }
     
     @media (min-width: 75em) {
-        .container {
-            margin: 2em auto;
-            max-width: 75em;
+        .container2 {
+            max-width: 64px;
         }
     }
     
@@ -206,6 +216,8 @@
     .responsive-table tbody th[scope="row"] {
         background-color: #1d96b2;
         color: white;
+        position: relative;
+        padding: 0px;
     }
     
     @media (min-width: 48em) {
@@ -256,1174 +268,1311 @@
             -webkit-border-radius: 5px 15px 0 0;
             border-radius: 5px 15px 0 0;
         }
+        .btn-group-lg>.btn,
+        .castell {
+            padding: 32px 32px;
+            font-size: 18px;
+            line-height: 1.3333333;
+            border-radius: 6px;
+            width: 64px;
+            height: 64px;
+        }
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+
+    /* Prevent native touch events on Windows */
+    -ms-touch-action: none;
+
+    /* Prevent the callout on tap-hold and text selection */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /* Prevent text resize on orientation change, useful for web-apps */
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+#scroller {
+    position: absolute;
+
+    /* Prevent elements to be highlighted on tap */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+    /* Put the scroller into the HW Compositing layer right from the start */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
     </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/jquery.bxslider.min.css">
 </head>
 
-<body>
-    <div class="container">
-        <table class="responsive-table">
-            <caption>Taula preriòdica Castellera</caption>
-            <thead>
-                <tr>
-                    <th scope="col" class="tap"></th>
-                    <th scope="col" class="tap">
-                        <object class="svgContainer" id="pilars" data="./svg/pilars.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/pilars.png" alt="PNG image of pilars.svg" id="pilars" class="svgContainer" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object class="svgContainer" id="pilars" data="./svg/pilars.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/pilars.png" alt="PNG image of pilars.svg" id="pilars" class="svgContainer" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/segons.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/segons.png" alt="PNG image of segons.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/segons.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/segons.png" alt="PNG image of segons.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/tercers.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/tercers.png" alt="PNG image of tercers.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/tercers.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/tercers.png" alt="PNG image of tercers.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/tercers.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/tercers.png" alt="PNG image of tercers.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/cuarts.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/cuarts.png" alt="PNG image of cuarts.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/cuarts.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/cuarts.png" alt="PNG image of cuarts.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/cuarts.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/cuarts.png" alt="PNG image of cuarts.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/cinquens.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/cinquens.png" alt="PNG image of cinquens.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/cinquens.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/cinquens.png" alt="PNG image of cinquens.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/sisens.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/sisens.png" alt="PNG image of sisens.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/sisens.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/sisens.png" alt="PNG image of sisens.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/setens.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/setens.png" alt="PNG image of setens.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/setens.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/setens.png" alt="PNG image of setens.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/setens.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/setens.png" alt="PNG image of setens.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/vuitens.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/vuitens.png" alt="PNG image of vuitens.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/vuitens.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/vuitens.png" alt="PNG image of vuitens.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/novens.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/novens.png" alt="PNG image of novens.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/desens.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/desens.png" alt="PNG image of desens.svg" />
-                        </object>
-                    </th>
-                    <th scope="col" class="tap">
-                        <object data="./svg/dotzens.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./imgs/dotzens.png" alt="PNG image of dotzens.svg" />
-                        </object>
-                    </th>
-                </tr>
-            </thead>
-            <tfoot>
-                <tr>
-                    <td colspan="7"><a href="http://www.estudioportable.com" rel="external">Jonas Rodon - Estudio Portable</a></td>
-                </tr>
-            </tfoot>
-            <tbody>
-                <tr>
-                    <th scope="row">
-                        🕴🕴🕴🕴
-                    </th>
-                    <td data-title="c-1-1">
-                        <object data="./svg/fiches/pd4.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/pd4.png" alt="PNG image of pd4.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-1-1">
-                        <object data="./svg/fiches/pd4s.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/pd4s.png" alt="PNG image of pd4s.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-3">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                        <td data-title="c-1-3-1">
-                            <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                            </object>
-                        </td>
-                        <td data-title="c-1-3">
-                            <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                            </object>
-                        </td>
-                    </td>
-                    <td data-title="c-1-4">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-8">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-9">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-10">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-12">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">🕴🕴🕴🕴🕴</th>
-                    </th>
-                    <td data-title="c-1-1">
-                        <object data="./svg/fiches/pd5.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/pd5.png" alt="PNG image of pd5.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-1-1">
-                        <object data="./svg/fiches/pd5s.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/pd5s.png" alt="PNG image of pd5s.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-3">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                        <td data-title="c-1-3-1">
-                            <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                            </object>
-                        </td>
-                        <td data-title="c-1-3">
-                            <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                            </object>
-                        </td>
-                    </td>
-                    <td data-title="c-1-4">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-8">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-9">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-10">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-12">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">🕴🕴🕴🕴🕴🕴</th>
-                    </th>
-                    <td data-title="c-1-1">
-                        <object data="./svg/fiches/pd6.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/pd6.png" alt="PNG image of pd6.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-1-1">
-                        <object data="./svg/fiches/pd6s.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/pd6s.png" alt="PNG image of pd6s.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2">
-                        <object data="./svg/fiches/2d6.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/2d6.png" alt="PNG image of svg/2d6.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2-1">
-                        <object data="./svg/fiches/2d6s.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/2d6s.png" alt="PNG image of svg/2d6s.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-3">
-                        <object data="./svg/fiches/3d6.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/3d6.png" alt="PNG image of svg/3d6.svg" />
-                        </object>
-                        <td data-title="c-1-3-1">
-                            <object data="./svg/fiches/3d6a.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/3d6a.png" alt="PNG image of svg/3d6a.svg" />
-                            </object>
-                        </td>
-                        <td data-title="c-1-3">
-                            <object data="./svg/fiches/3d6s.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/3d6s.png" alt="PNG image of svg/3d6s.svg" />
-                            </object>
-                        </td>
-                    </td>
-                    <td data-title="c-1-4">
-                        <object data="./svg/fiches/4d6.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/4d6.png" alt="PNG image of svg/4d6.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-1">
-                        <object data="./svg/fiches/4d6a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/4d6a.png" alt="PNG image of svg/4d6a.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-2">
-                        <object data="./svg/fiches/4d6s.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/4d6s.png" alt="PNG image of svg/4d6s.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5">
-                        <object data="./svg/fiches/5d6.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/5d6.png" alt="PNG image of svg/5d6.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5-1">
-                        <object data="./svg/fiches/5d6a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/5d6a.png" alt="PNG image of svg/5d6a.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6">
-                        <object data="./svg/fiches/6d6.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/6d6.png" alt="PNG image of svg/6d6.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-1">
-                        <object data="./svg/fiches/6d6a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/6d6a.png" alt="PNG image of svg/6d6a.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-2">
-                        <object data="./svg/fiches/7d6.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/7d6.png" alt="PNG image of svg/7d6.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7">
-                        <object data="./svg/fiches/7d6a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/7d6a.png" alt="PNG image of svg/7d6a.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-1">
-                        <object data="./svg/fiches/7d6aa.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/7d6aa.png" alt="PNG image of svg/7d6aa.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-2">
-                        <object data="./svg/fiches/8d6.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/8d6.png" alt="PNG image of svg/8d6.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-8">
-                        <object data="./svg/fiches/8d6a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/8d6a.png" alt="PNG image of svg/8d6a.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-9">
-                        <object data="./svg/fiches/9d6.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/9d6.png" alt="PNG image of svg/9d6.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-10">
-                        <object data="./svg/fiches/10d6.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/10d6.png" alt="PNG image of svg/10d6.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-12">
-                        <object data="./svg/fiches/12d6.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/12d6.png" alt="PNG image of svg/12d6.svg" />
-                        </object>
-                    </td>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">🕴🕴🕴🕴🕴🕴🕴</th>
-                    </th>
-                    <td data-title="c-1-1">
-                        <object data="./svg/fiches/pd7f.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/pd7f.png" alt="PNG image of pd7f.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-1-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2">
-                        <object data="./svg/fiches/2d7.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/2d7.png" alt="PNG image of svg/2d7.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2-1">
-                        <object data="./svg/fiches/2d7s.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/2d7s.png" alt="PNG image of svg/2d7s.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-3">
-                        <object data="./svg/fiches/3d7.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/3d7.png" alt="PNG image of svg/3d7.svg" />
-                        </object>
-                        <td data-title="c-1-3-1">
-                            <object data="./svg/fiches/3d7a.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/3d7a.png" alt="PNG image of svg/3d7a.svg" />
-                            </object>
-                        </td>
-                        <td data-title="c-1-3">
-                            <object data="./svg/fiches/3d7s.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/3d7s.png" alt="PNG image of svg/3d7s.svg" />
-                            </object>
-                        </td>
-                    </td>
-                    <td data-title="c-1-4-1">
-                        <object data="./svg/fiches/4d7.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/4d7.png" alt="PNG image of svg/4d7.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-2">
-                        <object data="./svg/fiches/4d7a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/4d7a.png" alt="PNG image of svg/4d7a.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5">
-                        <object data="./svg/fiches/4d7s.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/4d7s.png" alt="PNG image of svg/4d7s.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5-1">
-                        <object data="./svg/fiches/5d7.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/5d7.png" alt="PNG image of svg/5d7.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6">
-                        <object data="./svg/fiches/5d7a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/5d7a.png" alt="PNG image of svg/5d7a.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-1">
-                        <object data="./svg/fiches/6d7.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/6d7.png" alt="PNG image of svg/6d7.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-2">
-                        <object data="./svg/fiches/6d7a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/6d7a.png" alt="PNG image of svg/6d7a.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7">
-                        <object data="./svg/fiches/7d7.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/7d7.png" alt="PNG image of svg/7d7.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-1">
-                        <object data="./svg/fiches/7d7a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/7d7a.png" alt="PNG image of svg/7d7a.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-2">
-                        <object data="./svg/fiches/7d7aa.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/7d7aa.png" alt="PNG image of svg/7d7aa.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-8">
-                        <object data="./svg/fiches/8d7.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/8d7.png" alt="PNG image of svg/8d7.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-9">
-                        <object data="./svg/fiches/8d7a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/8d7a.png" alt="PNG image of svg/8d7a.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-10">
-                        <object data="./svg/fiches/9d7.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/9d7.png" alt="PNG image of svg/9d7.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-10">
-                        <object data="./svg/fiches/10d7.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/10d7.png" alt="PNG image of svg/10d7.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-12">
-                        <object data="./svg/fiches/12d7.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/12d7.png" alt="PNG image of svg/12d7.svg" />
-                        </object>
-                    </td>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">🕴🕴🕴🕴🕴🕴🕴</th>
-                    </th>
-                    <td data-title="c-1-1">
-                        <object data="./svg/fiches/pd8fm.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/pd8fm.png" alt="PNG image of pd8fm.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-1-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2">
-                        <object data="./svg/fiches/2d8f.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/2d8f.png" alt="PNG image of svg/2d8f.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-1-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2-1">
-                        <object data="./svg/fiches/3d8.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/3d8.png" alt="PNG image of svg/3d8.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-3">
-                        <object data="./svg/fiches/3d8a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/3d8a.png" alt="PNG image of svg/3d8a.svg" />
-                        </object>
-                        <td data-title="c-1-3-1">
-                            <object data="./svg/fiches/3d8s.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/3d8s.png" alt="PNG image of svg/3d8s.svg" />
-                            </object>
-                        </td>
-                        <td data-title="c-1-3">
-                            <object data="./svg/fiches/4d8.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/4d8.png" alt="PNG image of svg/4d8.svg" />
-                            </object>
-                        </td>
-                    </td>
-                    <td data-title="c-1-4">
-                        <object data="./svg/fiches/4d8a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/4d8a.png" alt="PNG image of svg/4d8a.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-1">
-                        <object data="./svg/fiches/4d8s.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/4d8s.png" alt="PNG image of svg/4d8s.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-2">
-                        <object data="./svg/fiches/5d8.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/5d8.png" alt="PNG image of svg/5d8.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5">
-                        <object data="./svg/fiches/5d8a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/5d8a.png" alt="PNG image of svg/5d8a.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5-1">
-                        <object data="./svg/fiches/6d8.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/6d8.png" alt="PNG image of svg/6d8.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-1">
-                        <object data="./svg/fiches/7d8.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/7d8.png" alt="PNG image of svg/7d8.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-2">
-                        <object data="./svg/fiches/7d8a.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/7d8a.png" alt="PNG image of svg/7d8a.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-8">
-                        <object data="./svg/fiches/9d8.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/9d8.png" alt="PNG image of svg/9d8.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-9">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-10">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">🕴🕴🕴🕴🕴🕴🕴🕴</th>
-                    </th>
-                    <td data-title="c-1-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-1-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2">
-                        <object data="./svg/fiches/2d8.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/2d8.png" alt="PNG image of svg/2d8.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-3">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                        <td data-title="c-1-3-1">
-                            <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                            </object>
-                        </td>
-                        <td data-title="c-1-3">
-                            <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                            </object>
-                        </td>
-                    </td>
-                    <td data-title="c-1-4">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-8">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-9">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-10">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-12">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">🕴🕴🕴🕴🕴🕴🕴🕴🕴</th>
-                    </th>
-                    <td data-title="c-1-1">
-                        <object data="./svg/fiches/pd9fmp.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/pd9fmp.png" alt="PNG image of pd9fmp.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-1-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2">
-                        <object data="./svg/fiches/2d9fm.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/2d9fm.png" alt="PNG image of svg/2d9fm.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-3">
-                        <object data="./svg/fiches/3d9f.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/3d9f.png" alt="PNG image of svg/3d9f.svg" />
-                        </object>
-                        <td data-title="c-1-3-1">
-                            <object data="./svg/fiches/3d9fa.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/3d9fa.png" alt="PNG image of svg/3d9fa.svg" />
-                            </object>
-                        </td>
-                        <td data-title="c-1-3">
-                            <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                            </object>
-                        </td>
-                    </td>
-                    <td data-title="c-1-4">
-                        <object data="./svg/fiches/4d9f.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/4d9f.png" alt="PNG image of svg/4d9f.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5">
-                        <object data="./svg/fiches/5d9f.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/5d9f.png" alt="PNG image of svg/5d9f.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-8">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-9">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-10">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-12">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">🕴🕴🕴🕴🕴🕴🕴🕴🕴</th>
-                    </th>
-                    <td data-title="c-1-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-1-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2">
-                        <object data="./svg/fiches/2d9f.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/2d9f.png" alt="PNG image of svg/2d9f.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-3">
-                        <object data="./svg/fiches/3d9.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/3d9.png" alt="PNG image of svg/3d9.svg" />
-                        </object>
-                        <td data-title="c-1-3-1">
-                            <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                            </object>
-                        </td>
-                        <td data-title="c-1-3">
-                            <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                            </object>
-                        </td>
-                    </td>
-                    <td data-title="c-1-4">
-                        <object data="./svg/fiches/4d9.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/4d9.png" alt="PNG image of svg/4d9.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-8">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-9">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-10">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-12">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴</th>
-                    </th>
-                    <td data-title="c-1-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-1-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-2-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-3">
-                        <object data="./svg/fiches/3d10fm.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/3d10fm.png" alt="PNG image of svg/3d10fm.svg" />
-                        </object>
-                        <td data-title="c-1-3-1">
-                            <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                            </object>
-                        </td>
-                        <td data-title="c-1-3">
-                            <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                                <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                            </object>
-                        </td>
-                    </td>
-                    <td data-title="c-1-4">
-                        <object data="./svg/fiches/4d10fm.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/4d10fm.png" alt="PNG image of svg/4d10fm.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-4-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-5-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-6-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-1">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-7-2">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-8">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-9">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-10">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    <td data-title="c-1-12">
-                        <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
-                            <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
-                        </object>
-                    </td>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<body onload="loaded()">
+    <div id="wrapper">
+        <div id="scroller">
+            <div class="container2">
+                <table class="responsive-table">
+                    <caption>Taula preriòdica Castellera</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="tap"></th>
+                            <th scope="col" class="tap">
+                                <object class="svgContainer" id="pilars" data="./svg/pilars.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/pilars.png" alt="PNG image of pilars.svg" id="pilars" class="svgContainer" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object class="svgContainer" id="pilars" data="./svg/pilars.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/pilars.png" alt="PNG image of pilars.svg" id="pilars" class="svgContainer" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/segons.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/segons.png" alt="PNG image of segons.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/segons.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/segons.png" alt="PNG image of segons.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/tercers.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/tercers.png" alt="PNG image of tercers.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/tercers.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/tercers.png" alt="PNG image of tercers.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/tercers.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/tercers.png" alt="PNG image of tercers.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/cuarts.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/cuarts.png" alt="PNG image of cuarts.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/cuarts.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/cuarts.png" alt="PNG image of cuarts.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/cuarts.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/cuarts.png" alt="PNG image of cuarts.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/cinquens.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/cinquens.png" alt="PNG image of cinquens.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/cinquens.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/cinquens.png" alt="PNG image of cinquens.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/sisens.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/sisens.png" alt="PNG image of sisens.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/sisens.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/sisens.png" alt="PNG image of sisens.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/setens.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/setens.png" alt="PNG image of setens.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/setens.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/setens.png" alt="PNG image of setens.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/setens.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/setens.png" alt="PNG image of setens.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/vuitens.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/vuitens.png" alt="PNG image of vuitens.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/vuitens.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/vuitens.png" alt="PNG image of vuitens.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/novens.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/novens.png" alt="PNG image of novens.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/desens.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/desens.png" alt="PNG image of desens.svg" />
+                                </object>
+                            </th>
+                            <th scope="col" class="tap">
+                                <object data="./svg/dotzens.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./imgs/dotzens.png" alt="PNG image of dotzens.svg" />
+                                </object>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="7"><a href="http://www.estudioportable.com" rel="external">Jonas Rodon - Estudio Portable</a></td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                🕴🕴🕴🕴
+                            </th>
+                            <td data-title="c-1-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/pd4.svg);"></button>
+                            </td>
+                            <td data-title="c-1-1-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/pd4s.svg);"></button>
+                            </td>
+                            <td data-title="c-1-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-2-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-3">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                                <td data-title="c-1-3-1">
+                                    <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                        <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                    </object>
+                                </td>
+                                <td data-title="c-1-3">
+                                    <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                        <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                    </object>
+                                </td>
+                            </td>
+                            <td data-title="c-1-4">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-4-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-4-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-5">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-5-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-8">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-9">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-10">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-12">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🕴🕴🕴🕴🕴</th>
+                            </th>
+                            <td data-title="c-1-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/pd5.svg);"></button>
+                            </td>
+                            <td data-title="c-1-1-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/pd5s.svg);"></button>
+                            </td>
+                            <td data-title="c-1-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-2-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-3">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                                <td data-title="c-1-3-1">
+                                    <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                        <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                    </object>
+                                </td>
+                                <td data-title="c-1-3">
+                                    <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                        <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                    </object>
+                                </td>
+                            </td>
+                            <td data-title="c-1-4">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-4-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-4-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-5">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-5-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-8">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-9">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-10">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-12">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🕴🕴🕴🕴🕴🕴</th>
+                            </th>
+                            <td data-title="c-1-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/pd6.svg);"></button>
+                            </td>
+                            <td data-title="c-1-1-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/pd6s.svg);"></button>
+                            </td>
+                            <td data-title="c-1-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/2d6.svg);"></button>
+                            </td>
+                            <td data-title="c-1-2-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/2d6s.svg);"></button>
+                            </td>
+                            <td data-title="c-1-3">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/3d6.svg);"></button>
+                                <td data-title="c-1-3-1">
+                                    <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/3d6a.svg);"></button>
+                                </td>
+                                <td data-title="c-1-3">
+                                    <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/3d6s.svg);"></button>
+                                </td>
+                            </td>
+                            <td data-title="c-1-4">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/4d6.svg);"></button>
+                            </td>
+                            <td data-title="c-1-4-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/4d6a.svg);"></button>
+                            </td>
+                            <td data-title="c-1-4-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/4d6s.svg);"></button>
+                            </td>
+                            <td data-title="c-1-5">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/5d6.svg);"></button>
+                            </td>
+                            <td data-title="c-1-5-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/5d6a.svg);"></button>
+                            </td>
+                            <td data-title="c-1-6">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/6d6.svg);"></button>
+                            </td>
+                            <td data-title="c-1-6-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/6d6a.svg);"></button>
+                            </td>
+                            <td data-title="c-1-6-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/7d6.svg);"></button>
+                            </td>
+                            <td data-title="c-1-7">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/7d6a.svg);"></button>
+                            </td>
+                            <td data-title="c-1-7-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/7d6aa.svg);"></button>
+                            </td>
+                            <td data-title="c-1-7-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/8d6.svg);"></button>
+                            </td>
+                            <td data-title="c-1-8">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/8d6a.svg);"></button>
+                            </td>
+                            <td data-title="c-1-9">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/9d6.svg);"></button>
+                            </td>
+                            <td data-title="c-1-10">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/10d6.svg);"></button>
+                            </td>
+                            <td data-title="c-1-12">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/12d6.svg);"></button>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🕴🕴🕴🕴🕴🕴🕴</th>
+                            </th>
+                            <td data-title="c-1-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/pd7f.svg);"></button>
+                            </td>
+                            <td data-title="c-1-1-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/2d7.svg);"></button>
+                            </td>
+                            <td data-title="c-1-2-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/2d7s.svg);"></button>
+                            </td>
+                            <td data-title="c-1-3">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/3d7.svg);"></button>
+                                <td data-title="c-1-3-1">
+                                    <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/3d7a.svg);"></button>
+                                </td>
+                                <td data-title="c-1-3">
+                                    <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/3d7s.svg);"></button>
+                                </td>
+                            </td>
+                            <td data-title="c-1-4-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/4d7.svg);"></button>
+                            </td>
+                            <td data-title="c-1-4-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/4d7a.svg);"></button>
+                            </td>
+                            <td data-title="c-1-5">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/4d7s.svg);"></button>
+                            </td>
+                            <td data-title="c-1-5-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/5d7.svg);"></button>
+                            </td>
+                            <td data-title="c-1-6">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/5d7a.svg);"></button>
+                            </td>
+                            <td data-title="c-1-6-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/6d7.svg);"></button>
+                            </td>
+                            <td data-title="c-1-6-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/6d7a.svg);"></button>
+                            </td>
+                            <td data-title="c-1-7">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/7d7.svg);"></button>
+                            </td>
+                            <td data-title="c-1-7-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/7d7a.svg);"></button>
+                            </td>
+                            <td data-title="c-1-7-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/7d7aa.svg);"></button>
+                            </td>
+                            <td data-title="c-1-8">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/8d7.svg);"></button>
+                            </td>
+                            <td data-title="c-1-9">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/8d7a.svg);"></button>
+                            </td>
+                            <td data-title="c-1-10">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/9d7.svg);"></button>
+                            </td>
+                            <td data-title="c-1-10">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/10d7.svg);"></button>
+                            </td>
+                            <td data-title="c-1-12">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/12d7.svg);"></button>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🕴🕴🕴🕴🕴🕴🕴</th>
+                            </th>
+                            <td data-title="c-1-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/pd8fm.svg);"></button>
+                            </td>
+                            <td data-title="c-1-1-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/2d8f.svg);"></button>
+                            </td>
+                            <td data-title="c-1-1-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-2-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/3d8.svg);"></button>
+                            </td>
+                            <td data-title="c-1-3">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/3d8a.svg);"></button>
+                                <td data-title="c-1-3-1">
+                                    <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/3d8s.svg);"></button>
+                                </td>
+                                <td data-title="c-1-3">
+                                    <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/4d8.svg);"></button>
+                                </td>
+                            </td>
+                            <td data-title="c-1-4">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/4d8a.svg);"></button>
+                            </td>
+                            <td data-title="c-1-4-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/4d8s.svg);"></button>
+                            </td>
+                            <td data-title="c-1-4-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/5d8.svg);"></button>
+                            </td>
+                            <td data-title="c-1-5">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/5d8a.svg);"></button>
+                            </td>
+                            <td data-title="c-1-5-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/6d8.svg);"></button>
+                            </td>
+                            <td data-title="c-1-6">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/7d8.svg);"></button>
+                            </td>
+                            <td data-title="c-1-6-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/7d8a.svg);"></button>
+                            </td>
+                            <td data-title="c-1-7">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-8">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/9d8.svg);"></button>
+                            </td>
+                            <td data-title="c-1-9">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-10">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🕴🕴🕴🕴🕴🕴🕴🕴</th>
+                            </th>
+                            <td data-title="c-1-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-1-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/2d8.svg);"></button>
+                            </td>
+                            <td data-title="c-1-2-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-3">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                                <td data-title="c-1-3-1">
+                                    <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                        <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                    </object>
+                                </td>
+                                <td data-title="c-1-3">
+                                    <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                        <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                    </object>
+                                </td>
+                            </td>
+                            <td data-title="c-1-4">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-4-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-4-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-5">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-5-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-8">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-9">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-10">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-12">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🕴🕴🕴🕴🕴🕴🕴🕴🕴</th>
+                            </th>
+                            <td data-title="c-1-1">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/pd9fmp.svg);"></button>
+                            </td>
+                            <td data-title="c-1-1-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/2d9fm.svg);"></button>
+                            </td>
+                            <td data-title="c-1-2-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-3">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/3d9f.svg);"></button>
+                                <td data-title="c-1-3-1">
+                                    <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/3d9fa.svg);"></button>
+                                </td>
+                                <td data-title="c-1-3">
+                                    <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                        <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                    </object>
+                                </td>
+                            </td>
+                            <td data-title="c-1-4">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/4d9f.svg);"></button>
+                            </td>
+                            <td data-title="c-1-4-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-4-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-5">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/5d9f.svg);"></button>
+                            </td>
+                            <td data-title="c-1-5-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-8">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-9">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-10">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-12">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🕴🕴🕴🕴🕴🕴🕴🕴🕴</th>
+                            </th>
+                            <td data-title="c-1-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-1-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-2">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/2d9f.svg);"></button>
+                            </td>
+                            <td data-title="c-1-2-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-3">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/3d9.svg);"></button>
+                                <td data-title="c-1-3-1">
+                                    <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                        <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                    </object>
+                                </td>
+                                <td data-title="c-1-3">
+                                    <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                        <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                    </object>
+                                </td>
+                            </td>
+                            <td data-title="c-1-4">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/4d9.svg);"></button>
+                            </td>
+                            <td data-title="c-1-4-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-4-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-5">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-5-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-8">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-9">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-10">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-12">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴</th>
+                            </th>
+                            <td data-title="c-1-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-1-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-2-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-3">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/3d10fm.svg);"></button>
+                                <td data-title="c-1-3-1">
+                                    <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                        <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                    </object>
+                                </td>
+                                <td data-title="c-1-3">
+                                    <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                        <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                    </object>
+                                </td>
+                            </td>
+                            <td data-title="c-1-4">
+                                <button type="button" class="btn btn-primary btn-lg castell" data-toggle="modal" data-target="#mPd4" style="background-image: url(svg/fiches/4d10fm.svg);"></button>
+                            </td>
+                            <td data-title="c-1-4-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-4-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-5">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-5-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-6-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-1">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-7-2">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-8">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-9">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-10">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            <td data-title="c-1-12">
+                                <object data="./svg/fiches/default.svg" width="64px" height="64px" type="image/svg+xml">
+                                    <img src="./svg/fiches/default.png" alt="PNG image of svg/default.svg" />
+                                </object>
+                            </td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-    <script src="./js/pilars.js" charset="utf-8"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="mPd4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <main>
+                        <input placeholder="Filtra per castell" x-webkit-speech="" autocomplete="off">
+                        <header></header>
+                        <section class="card">
+                            <h1 contenteditable="true">Pilar de cuatre</h1>
+                            <img src="./svg/fiches/pd6.svg" width="100%">
+                        </section>
+                        <section class="card">
+                            <h1>Denominació i catalogació del castell</h1>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#home">estructura</a></li>
+                                <li><a data-toggle="tab" href="#menu1">pisos d’alçada</a></li>
+                                <li><a data-toggle="tab" href="#menu2">tipus d’estructura</a></li>
+                                <li><a data-toggle="tab" href="#menu3">tècnica de construcció</a></li>
+                                <li><a data-toggle="tab" href="#menu4">gamma</a></li>
+                            </ul>
+                            <div class="tab-content" style="color:black;">
+                                <div id="home" class="tab-pane fade in active">
+                                    <h3>el pilar</h3>
+                                    <p>L’estructura d’un castell és el nombre i disposició dels castellers que formen el tronc del castell. [1] Juntament amb els pisos d’alçada, l’estructura és un dels dos paràmetres bàsics per distingir els diferents tipus de castells. [2] Un pilar és un castell d’estructura simple format per una persona per pis. [3] 1. «Diccionari casteller». TERMCAT, 2007. [Consulta: 11 novembre del 2012]. 2. Almirall, Josep. «Tots els castells». A: Castells, tocant el cel amb la mà. Triangle Postals, 2011, pp.113-211 3. Brotons i Navarro, Xavier. «Els castells: conceptes bàsics». A: Castells i castellers. Gua completa del món casteller. Lynx edicions, març del 1995, pp.13-54. ISBN 84-87334-17-2</p>
+                                </div>
+                                <div id="menu1" class="tab-pane fade">
+                                    <h3>6</h3>
+                                    <p>Els castells poden ser de 4, 5, 6, 7, 8, 9 i fins i tot 10 pisos d’alçada. [1] Juntament amb els pisos d’alçada, l’estructura és un dels dos paràmetres bàsics per distingir els diferents tipus de castells. [2] Aquí jo hi posaria tota la fila de castells de 6 1. «Tipus de castells». CCCC, 2007. [Consulta: 9 març del 2017]. 2. Almirall, Josep. «Tots els castells». A: Castells, tocant el cel amb la mà. Triangle Postals, 2011, pp.113-211</p>
+                                </div>
+                                <div id="menu2" class="tab-pane fade">
+                                    <h3>simple</h3>
+                                    <p>Els castells es diferencien segons dos tipus d’estructura: les estructures simples i les estructures compostes o combinades.[1] El pilar és una estructura simple, com ho són també el dos (o torre), el tres i el quatre. [1] 1. «Diccionari casteller». TERMCAT, 2007. [Consulta: 11 novembre del 2012]..</p>
+                                </div>
+                                <div id="menu3" class="tab-pane fade">
+                                    <h3>bàsica</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu4" class="tab-pane fade">
+                                    <h3>bàsica de vuit</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <h1>Parts del castell</h1>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#menu5">pinya</a></li>
+                                <li><a data-toggle="tab" href="#menu6">tronc</a></li>
+                                <li><a data-toggle="tab" href="#menu7">pom de dalt</a></li>
+                                <li><a data-toggle="tab" href="#menu8">folre</a></li>
+                                <li><a data-toggle="tab" href="#menu9">manilles</a></li>
+                            </ul>
+                            <div class="tab-content" style="color:black;">
+                                <div id="menu5" class="tab-pane fade in active">
+                                    <h3>49 castellers</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu6" class="tab-pane fade">
+                                    <h3>4 castellers</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu7" class="tab-pane fade">
+                                    <h3>1 casteller</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu8" class="tab-pane fade">
+                                    <h3>sense</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu9" class="tab-pane fade">
+                                    <h3>sense</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <h1>Taula de puntuacions del Concurs de Castells 2016</h1>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#menu10">punts carregat</a></li>
+                                <li><a data-toggle="tab" href="#menu11">punts descarregat</a></li>
+                                <li><a data-toggle="tab" href="#menu12">grup</a></li>
+                                <li><a data-toggle="tab" href="#menu13">subgrup</a></li>
+                            </ul>
+                            <div class="tab-content" style="color:black;">
+                                <div id="menu10" class="tab-pane fade in active">
+                                    <h3>269</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu11" class="tab-pane fade">
+                                    <h3>318</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu12" class="tab-pane fade">
+                                    <h3>grup 3</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu13" class="tab-pane fade">
+                                    <h3>sub 2</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <h1>Estadística</h1>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#menu14">núm. de colles que han descarregat</a></li>
+                                <li><a data-toggle="tab" href="#menu15">núm. de colles que l’han carregat</a></li>
+                                <li><a data-toggle="tab" href="#menu16">núm. de colles que l’han intentat</a></li>
+                            </ul>
+                            <div class="tab-content" style="color:black;">
+                                <div id="menu14" class="tab-pane fade in active">
+                                    <h3>19</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu15" class="tab-pane fade">
+                                    <h3>5</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu16" class="tab-pane fade">
+                                    <h3>6</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <h1>Història “antiga”</h1>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#menu17">Any de consecució absolut del castell carregat</a></li>
+                                <li><a data-toggle="tab" href="#menu18">Colla pionera en assolir el castell carregat</a></li>
+                                <li><a data-toggle="tab" href="#menu19">Any de consecució absolut del castell descarregat</a></li>
+                                <li><a data-toggle="tab" href="#menu20">Colla pionera en assolir el castell descarregat</a></li>
+                            </ul>
+                            <div class="tab-content" style="color:black;">
+                                <div id="menu17" class="tab-pane fade in active">
+                                    <h3>1890</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu18" class="tab-pane fade">
+                                    <h3>desconegut</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu19" class="tab-pane fade">
+                                    <h3>1890</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu20" class="tab-pane fade">
+                                    <h3>desconegut</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <h1>Història “recent”</h1>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#menu21">Any de consecució absolut del castell carregat</a></li>
+                                <li><a data-toggle="tab" href="#menu22">Colla pionera en assolir el castell carregat</a></li>
+                                <li><a data-toggle="tab" href="#menu23">Any de consecució absolut del castell descarregat</a></li>
+                                <li><a data-toggle="tab" href="#menu24">Colla pionera en assolir el castell descarregat</a></li>
+                            </ul>
+                            <div class="tab-content" style="color:black;">
+                                <div id="menu21" class="tab-pane fade in active">
+                                    <h3>1967</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu22" class="tab-pane fade">
+                                    <h3>Nens del Vendrell</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu23" class="tab-pane fade">
+                                    <h3>1969</h3>
+                                    <p></p>
+                                </div>
+                                <div id="menu24" class="tab-pane fade">
+                                    <h3>Nens del Vendrell</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <div class="slider8">
+                                <div class="slide img-responsive"><img src="./imgs/P6_CdB_barceloneta2014.jpg"></div>
+                                <div class="slide img-responsive"><img src="./imgs/pde6_19052013.jpg"></div>
+                                <div class="slide img-responsive"><img src="./imgs/P6_CdB_barceloneta2014.jpg"></div>
+                                <div class="slide img-responsive"><img src="./imgs/pde6_19052013.jpg"></div>
+                                <div class="slide img-responsive"><img src="./imgs/P6_CdB_barceloneta2014.jpg"></div>
+                                <div class="slide img-responsive"><img src="./imgs/pde6_19052013.jpg"></div>
+                                <div class="slide img-responsive"><img src="./imgs/P6_CdB_barceloneta2014.jpg"></div>
+                                <div class="slide img-responsive"><img src="./imgs/pde6_19052013.jpg"></div>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <!-- Latest compiled and minified JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <!--     <script src="./js/raphael-min.js"></script>
+    <script src="./js/morris.min.js"></script>
+    <script src="./js/charts.js"></script>
+ -->
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/demoUtils.js"></script>
+    <script type="text/javascript">
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll ('#wrapper', { scrollX: true, scrollY: true, mouseWheel: true })
+    }
+
+    document.addEventListener('touchmove', function (e) {
+        e.preventDefault()
+    }, isPassive () ? {
+        capture: false,
+        passive: false
+    } : false)
+    </script>
+    <script src="js/app.js"></script>
     <script src="./js/index.js" charset="utf-8"></script>
     <script>
     // var b1 = elasticSVG('#pilars', {
