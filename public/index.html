@@ -927,16 +927,15 @@
                             </div>
                         </section>
                         <section class="card">
-                            <div class="slider8">
-                                <div class="slide"><img width="400px" src="imgs/P6_CdB_barceloneta2014.jpg"></div>
-                                <div class="slide"><img width="400px" src="imgs/pde6_19052013.jpg"></div>
-                                <div class="slide"><img width="400px" src="imgs/P6_CdB_barceloneta2014.jpg"></div>
-                                <div class="slide"><img width="400px" src="imgs/pde6_19052013.jpg"></div>
-                                <div class="slide"><img width="400px" src="imgs/P6_CdB_barceloneta2014.jpg"></div>
-                                <div class="slide"><img width="400px" src="imgs/pde6_19052013.jpg"></div>
-                                <div class="slide"><img width="400px" src="imgs/P6_CdB_barceloneta2014.jpg"></div>
-                                <div class="slide"><img width="400px" src="imgs/pde6_19052013.jpg"></div>
-                            </div>
+                            <ul class="imgSlider">
+                                <li><img width="400px" src="imgs/P6_CdB_barceloneta2014.jpg"></li>
+                                <li><img width="400px" src="imgs/pde6_19052013.jpg"></li>
+                                <li><img width="400px" src="imgs/P6_CdB_barceloneta2014.jpg"></li>
+                                <li><img width="400px" src="imgs/P6_CdB_barceloneta2014.jpg"></li>
+                                <li><img width="400px" src="imgs/pde6_19052013.jpg"></li>
+                                <li><img width="400px" src="imgs/P6_CdB_barceloneta2014.jpg"></li>
+                            </ul>
+                            </ul>
                         </section>
                     </main>
                 </div>
@@ -947,41 +946,12 @@
         </div>
     </div>
     <script type="text/javascript" src="bower-components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="bower-components/bxslider-4/dist/jquery.bxslider.js"></script>
     <script type="text/javascript" src="bower-components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="bower-components/iscroll/build/iscroll.js"></script>
     <script type="text/javascript">
-    var myScroll;
-
-    function loaded() {
-        myScroll = new IScroll('#wrapper ', {
-            scrollX: true
-        })
-        myScroll2 = new IScroll('#wrapper .container2', {
-            scrollX: true,
-            scrollY: true,
-            mouseWheel: true
-        })
-    }
-    document.addEventListener('touchmove', function(e) {
-        e.preventDefault()
-    }, isPassive() ? {
-        capture: false,
-        passive: false
-    } : false)
-    $(document).ready(function() {
-        $('.slider8').bxSlider({
-            mode: 'vertical',
-            slideWidth: 300,
-            minSlides: 1,
-            slideMargin: 5,
-            auto: true,
-            autoControls: true,
-            speed: 2000
-        })
-    })
     </script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>

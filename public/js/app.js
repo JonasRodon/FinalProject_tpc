@@ -10,14 +10,8 @@
        mouseWheel: true
      })
    }
-   document.addEventListener('touchmove', function (e) {
-     e.preventDefault()
-   }, isPassive() ? {
-     capture: false,
-     passive: false
-   } : false)
    $(document).ready(function () {
-     $('.slider8').bxSlider({
+     $('.imgSlider').bxSlider({
        mode: 'vertical',
        slideWidth: 300,
        minSlides: 1,
