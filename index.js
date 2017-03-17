@@ -13,6 +13,9 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.get('/', function (request, response) {
   response.redirect('/index.html')
 })
+app.get('/tpcastellera.cat', function (request, response) {
+  response.redirect('/index.html')
+})
 
 // app.get('/cool', function (request, response) {
 //   response.send(cool())
