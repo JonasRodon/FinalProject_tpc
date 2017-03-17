@@ -1,35 +1,24 @@
-const express = require('express')
-const path = require('path')
-const bodyParser = require('body-parser')
-const mongoose = require('mongoose')
+var express = require('express')
+var path = require('path')
+var app = express()
 
-const routerEvents = require('./routes/humanTowers') // routes
-mongoose.Promise = global.Promise // configuration
+app.set('port', (process.env.PORT || 5000))
 
-// const PORT = process.env.PORT || 3000
-// const urlDB = process.env.DB_URI || 'mongodb://admin:admin@ds129010.mlab.com:29010/db_encuentra'
-// const app = express()
+app.use(express.static(path.join(__dirname, 'public')))
 
-// app.locals.moment = require('moment')
+// views is directory for all template files
+// app.set('views', __dirname + '/views')
+// app.set('view engine', 'ejs')
 
-// app.use(bodyParser.urlencoded({ extended: false }))
-// app.use(bodyParser.json())
+app.get('/', function (request, response) {
+  response.redirect('/index.html')
+})
 
-// app.set('view engine', 'pug')
+// app.get('/cool', function (request, response) {
+//   response.send(cool())
+// })
 
-// // app.use(express.static('public'))
-// // app.use(express.static(__dirname + '/public'))
-// app.use(express.static(path.join(__dirname, 'public')))
+app.listen(app.get('port'), function () {
+  console.log('Node app is running on port', app.get('port'))
+})
 
-// mongoose.connect(urlDB)
-// const db = mongoose.connection
-// db.on('error', console.error.bind(console, 'ERROR'))
-// db.once('open', () => { console.log('CONNECTED') })
-// app.use('/events', routerEvents)
-// // app.use('/client', routerClient)
-
-// // app.get('/', function (req, res) {
-// //   res.sendFile(__dirname + '/public/html/index.html')
-// // })
-
-// app.listen(PORT, () => console.log(`Running on PORT ${PORT}...`))
