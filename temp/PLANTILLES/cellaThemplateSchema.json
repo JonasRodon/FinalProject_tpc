@@ -1,0 +1,194 @@
+[{
+    "position": {
+        "number": {
+            "type": "integer",
+            "title": "Number in the Table"
+        },
+        "gNumber": {
+            "type": "integer",
+            "title": "Number in the big Table"
+        },
+        "posRow": {
+            "type": "integer",
+            "title": "Row position in Table"
+        },
+        "posCol": {
+            "type": "integer",
+            "title": "Column position in Table"
+        },
+        "bigPosRow": {
+            "type": "integer",
+            "title": "Row position in th big Table"
+        },
+        "bigPosCol": {
+            "type": "integer",
+            "title": "Column position in the big Table"
+        }
+    },
+    "name": {
+        "type": "string",
+        "title": "Name long"
+    },
+    "keyName": {
+        "type": "string",
+        "title": "name short"
+    },
+    "tumbNailSrc": {
+        "type": "string",
+        "title": "src of the tumbnail"
+    },
+    "catInfo": {
+        "type": "object",
+        "title": "catInfo",
+        "info": {
+            "esName": {
+                "type": "string",
+                "title": "Name of structure"
+            },
+            "esDescription": {
+                "type": "string",
+                "title": "Description of structure"
+            },
+            "esType": {
+                "type": "string",
+                "title": "Type of structure"
+            },
+            "consTec": {
+                "type": "string",
+                "title": "Tecnical Construction of structure"
+            },
+            "gamma": {
+                "type": "string",
+                "title": "Gamma of structure"
+            }
+        }
+    },
+    "parts": {
+        "type": "object",
+        "title": "Parts of construction",
+        "parts": {
+            "pinya": {
+                "type": "integer",
+                "title": "Castellers of pinya"
+            },
+            "tronc": {
+                "type": "integer",
+                "title": "Castellers of tronc"
+            },
+            "pom": {
+                "type": "integer",
+                "title": "Castellers of pom"
+            },
+            "folre": {
+                "type": "integer",
+                "title": "Castellers of folre"
+            },
+            "manilles": {
+                "type": "integer",
+                "title": "Castellers of manilles"
+            }
+        }
+    },
+    "score": {
+        "type": "object",
+        "title": "Parts of construction",
+        "score": {
+            "pointsCar": {
+                "type": "integer",
+                "title": "Points Carregat"
+            },
+            "pointsDes": {
+                "type": "integer",
+                "title": "Points Descarregat"
+            },
+            "group": {
+                "type": "integer",
+                "title": "Goup"
+            },
+            "subGroup": {
+                "type": "integer",
+                "title": "SubGroup"
+            }
+        }
+    },
+    "metrics": {
+        "type": "object",
+        "title": "Metrics of the Castle",
+        "metrics": {
+            "numCollDes": {
+                "type": "integer",
+                "title": "Number of teams Descarregats"
+            },
+            "numCollCar": {
+                "type": "integer",
+                "title": "Number of teams Carregats"
+            },
+            "numCollIn": {
+                "type": "integer",
+                "title": "Number of teams Intentats"
+            }
+        }
+    },
+    "hOld": {
+        "type": "object",
+        "title": "Old data",
+        "old": {
+            "yearCasCar": {
+                "type": "integer",
+                "title": "Year Castell Carregat"
+            },
+            "firstCollCar": {
+                "type": "integer",
+                "title": "First Colla Carregat"
+            },
+            "yearCasDes": {
+                "type": "integer",
+                "title": "Year Castell Descarregats"
+            },
+            "firstCollDes": {
+                "type": "integer",
+                "title": "First Colla Descarregats"
+            }
+        }
+    },
+    "hNew": {
+        "type": "object",
+        "title": "New data",
+        "new": {
+            "yearCasCar": {
+                "type": "integer",
+                "title": "Year Castell Carregat"
+            },
+            "firstCollCar": {
+                "type": "integer",
+                "title": "First Colla Carregat"
+            },
+            "yearCasDes": {
+                "type": "integer",
+                "title": "Year Castell Descarregats"
+            },
+            "firstCollDes": {
+                "type": "integer",
+                "title": "First Colla Descarregats"
+            }
+        }
+    },
+    "imgScr": {
+        "type": "array",
+        "items": {
+            "src": {
+                "type": "string",
+                "title": "image source"
+            }
+        }
+    },
+    "vidScr": {
+        "type": "array",
+        "items": {
+            "src": {
+                "type": "string",
+                "title": "video source"
+            }
+        }
+    }
+}]

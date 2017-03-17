@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Maestro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Estilos de la master -->
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/estilo.css">
+    <link rel="stylesheet" href="plugins/formToWizard/css/formToWizard.css" />
+    <link rel="stylesheet" href="plugins/formToWizard/css/validationEngine.jquery.css" />
+    <link rel="stylesheet" href="./plugins/chosen/chosen.css">
+    <link rel="stylesheet" href="./plugins/chosen/docsupport/prism.css">
+    <link href="./plugins/flexdatalist/jquery.flexdatalist.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./plugins/timepicker/include/ui-1.10.0/ui-lightness/jquery-ui-1.10.0.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="./plugins/timepicker/jquery.ui.timepicker.css?v=0.3.3" type="text/css" />
+    <link rel="stylesheet" media="all" type="text/css" href="plugins/Timepicker-Addon/src/jquery-ui-timepicker-addon.css" />
+    <style type="text/css" media="all">
+    /* fix rtl for demo */
+    
+    .chosen-rtl .chosen-drop {
+        left: -9000px;
+    }
+    </style>
+    <!-- Estilos de los recursos adicionales -->
+
+    <body>
+        <div class="container">
+            <section id="controls">
+                <h1>Salta al Pas: </h1>
+                <input id="txt_stepNo" type="text" placeholder="numero de Pas..." />
+                <button id="btn_next">Següent Pas 🔁</button>
+                <button id="btn_prev">🔁 Pas Anterior</button>
+            </section>
+            <div class="page-header" style="margin-top: 55px;">
+                <h1>TpCastellera</h1>
+                <p class="lead">Formulari de la ficha de castell.</p>
+            </div>
+            <form id="SignupForm" action="">
+                <fieldset>
+                    <legend>Dades Principals</legend>
+                    <div class="section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="spacer">
+                                        <em>Nomenclatura del castell</em>
+                                        <select data-placeholder="Escull Nomenclatura del castell ..." class="chosen-select" tabindex="-1">
+                                            <option value="Pd4">Pd4</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Nomenclatura alternativa del castell</em>
+                                        <select data-placeholder="Escull Nomenclatura alternativa del castell ..." class="chosen-select" tabindex="-1">
+                                            <option value="-">-</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Denominació del castell</em>
+                                        <select data-placeholder="Escull Denominació del castell ..." class="chosen-select" tabindex="-1">
+                                            <option value="Pilar de 4">Pilar de 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Denominació alternativa del castell</em>
+                                        <select data-placeholder="Escull Denominació alternativa del castell ..." class="chosen-select" tabindex="-1">
+                                            <option value="espadat de quatre">espadat de quatre</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>D’altres denominacions del castell</em>
+                                        <select data-placeholder="Escull D’altres denominacions del castell ..." class="chosen-select" tabindex="-1">
+                                            <option value="-">-</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Sobrenom del castell</em>
+                                        <select data-placeholder="Escull Sobrenom del castell ..." class="chosen-select" tabindex="-1">
+                                            <option value="-">-</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>D’altres sobrenoms del castell</em>
+                                        <select data-placeholder="Escull Sobrenom alternatiu del castell ..." class="chosen-select" tabindex="-1">
+                                            <option value="-">-</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>D’altres sobrenoms del castell</em>
+                                        <select data-placeholder="Escull D’altres sobrenoms del castell ..." class="chosen-select" tabindex="-1">
+                                            <option value="-">-</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Estructura</em>
+                                        <select data-placeholder="Escull una Estructura..." class="chosen-select" tabindex="-1">
+                                            <option value="el pilar">el pilar</option>
+                                            <option value="el dos o la torre">el dos o la torre</option>
+                                            <option value="el tres">el tres</option>
+                                            <option value="el quatre">el quatre</option>
+                                            <option value="el cinc">el cinc</option>
+                                            <option value="el sis">el sis</option>
+                                            <option value="el set">el set</option>
+                                            <option value="el vuit">el vuit</option>
+                                            <option value="el nou">el nou</option>
+                                            <option value="el deu">el deu</option>
+                                            <option value="el dotze">el dotze</option>
+                                            <option value="el setze">el setze</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Subestructura</em>
+                                        <select data-placeholder="Escull una Subestructura..." class="chosen-select" tabindex="-1">
+                                            <option value="el pilarel sis (quatre i dos)">el sis (quatre i dos)</option>
+                                            <option value="el sis (tres i tres)">el sis (tres i tres)</option>
+                                            <option value="el sis (dos i dos i dos)">el sis (dos i dos i dos)</option>
+                                            <option value="el vuit (quatre central i dos de dos)">el vuit (quatre central i dos de dos)</option>
+                                            <option value="el vuit (dos central i dos de quatre)">el vuit (dos central i dos de quatre)</option>
+                                            <option value="el nou (amb tres enxanetes)">el nou (amb tres enxanetes)</option>
+                                            <option value="el nou (amb una enxaneta)">el nou (amb una enxaneta)</option>
+                                            <option value="el deu (amb tres enxanetes)">el deu (amb tres enxanetes)</option>
+                                            <option value="el deu (amb una enxaneta)">el deu (amb una enxaneta)</option>
+                                            <option value="el dotze (amb quatre enxanetes)">el dotze (amb quatre enxanetes)</option>
+                                            <option value="el dotze (amb una enxaneta)">el dotze (amb una enxaneta)</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Pisos d'alçada</em>
+                                        <select data-placeholder="Escull un Pis d'alçada..." class="chosen-select" tabindex="-1">
+                                            <option value="u">u</option>
+                                            <option value="dos">dos</option>
+                                            <option value="tres">tres</option>
+                                            <option value="quatre">quatre</option>
+                                            <option value="cinc">cinc</option>
+                                            <option value="sis">sis</option>
+                                            <option value="set">set</option>
+                                            <option value="vuit">vuit</option>
+                                            <option value="nou">nou</option>
+                                            <option value="deu">deu</option>
+                                            <option value="onze">onze</option>
+                                            <option value="dotze">dotze</option>
+                                            <option value="tretze">tretze</option>
+                                            <option value="catorze">catorze</option>
+                                            <option value="quinze">quinze</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <div class="containerES">
+                                            <em>Tipus d’estructura</em>
+                                            <div class="switch switch-blue">
+                                                <input type="radio" class="switch-input" name="tipusDestructura" value="simple" id="simple" checked>
+                                                <label for="simple" class="switch-label switch-label-simple">simple</label>
+                                                <input type="radio" class="switch-input" name="tipusDestructura" value="composta" id="composta">
+                                                <label for="composta" class="switch-label switch-label-composta">composta</label>
+                                                <span class="switch-selection"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Tècnica de construcció</em>
+                                        <select data-placeholder="Escull Tècnica de construcció..." class="chosen-select" tabindex="-1">
+                                            <option value="bàsic">bàsic</option>
+                                            <option value="amb l’agulla o amb el pilar">amb l’agulla o amb el pilar</option>
+                                            <option value="aixecat per sota">aixecat per sota</option>
+                                            <option value="caminant">caminant</option>
+                                            <option value="per sota i caminant">per sota i caminant</option>
+                                            <option value="amb dues agulles o amb dos pilars">amb dues agulles o amb dos pilars</option>
+                                            <option value="amb tres agulles o amb tres pilars">amb tres agulles o amb tres pilars</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="containerES">
+                                        <em>Primer reforç de tronc</em>
+                                        <div class="switch switch-blue">
+                                            <input type="radio" class="switch-input" name="primerReforçDeTronc" value="true" id="pref" checked>
+                                            <label for="pref" class="switch-label switch-label-pref">-</label>
+                                            <input type="radio" class="switch-input" name="primerReforçDeTronc" value="primerReforçTronc" id="primerReforçTronc">
+                                            <label for="primerReforçTronc" class="switch-label switch-label-primerReforçTronc">folre</label>
+                                            <span class="switch-selection"></span>
+                                        </div>
+                                    </div>
+                                    <div class="containerES">
+                                        <em>Segon reforç de tronc</em>
+                                        <div class="switch switch-blue">
+                                            <input type="radio" class="switch-input" name="segonReforçDeTronc" value="sref" id="sref" checked>
+                                            <label for="sref" class="switch-label switch-label-sref">-</label>
+                                            <input type="radio" class="switch-input" name="segonReforçDeTronc" value="segonReforçTronc" id="segonReforçTronc">
+                                            <label for="segonReforçTronc" class="switch-label switch-label-segonReforçTronc">manilles</label>
+                                            <span class="switch-selection"></span>
+                                        </div>
+                                    </div>
+                                    <div class="containerES">
+                                        <em>Tercer reforç de tronc</em>
+                                        <div class="switch switch-blue">
+                                            <input type="radio" class="switch-input" name="tercerReforçDeTronc" value="tref" id="tref" checked>
+                                            <label for="tref" class="switch-label switch-label-tref">-</label>
+                                            <input type="radio" class="switch-input" name="tercerReforçDeTronc" value="tercerReforçTronc" id="tercerReforçTronc">
+                                            <label for="tercerReforçTronc" class="switch-label switch-label-tercerReforçTronc">puntals</label>
+                                            <span class="switch-selection"></span>
+                                        </div>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Alteració de reforç de tronc</em>
+                                        <select data-placeholder="Escull Alteració de reforç..." class="chosen-select" tabindex="-1">
+                                            <option value="-">-</option>
+                                            <option value="♯">♯</option>
+                                            <option value="♭">♭</option>
+                                            <option value="♯♯">♯♯</option>
+                                            <option value="♯♯♯">♯♯♯</option>
+                                            <option value="♭♭">♭♭</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Situació del castell</em>
+                                        <select data-placeholder="Escull Alteració de reforç..." class="chosen-select" tabindex="-1">
+                                            <option value="castell assolit">castell assolit</option>
+                                            <option value="castell inèdit i intentat">castell inèdit i intentat</option>
+                                            <option value="castell inèdit">castell inèdit</option>
+                                            <option value="castell d’assaig">castell d’assaig</option>
+                                            <option value="castell de colla universitària">castell de colla universitària</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Gamma del castell normativa</em>
+                                        <select data-placeholder="Escull Alteració de reforç..." class="chosen-select" tabindex="-1">
+                                            <option value="gamma de sis">gamma de sis</option>
+                                            <option value="gamma de set">gamma de set</option>
+                                            <option value="gamma de vuit">gamma de vuit</option>
+                                            <option value="gamma de nou">gamma de nou</option>
+                                            <option value="gamma extra">gamma extra</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Gamma del castell normativa detallada</em>
+                                        <select data-placeholder="Escull Alteració de reforç..." class="chosen-select" tabindex="-1">
+                                            <option value="gamma bàsica de sis">gamma bàsica de sis</option>
+                                            <option value="gamma alta de sis">gamma alta de sis</option>
+                                            <option value="gamma bàsica de set">gamma bàsica de set</option>
+                                            <option value="gamma alta de set">gamma alta de set</option>
+                                            <option value="gamma bàsica de vuit">gamma bàsica de vuit</option>
+                                            <option value="gamma alta de vuit">gamma alta de vuit</option>
+                                            <option value="gamma de nou">gamma de nou</option>
+                                            <option value="gamma extra">gamma extra</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Gamma del castell alternativa</em>
+                                        <select data-placeholder="Escull Alteració de reforç..." class="chosen-select" tabindex="-1">
+                                            <option value="gamma de cinc">gamma de cinc</option>
+                                            <option value="gamma de sis">gamma de sis</option>
+                                            <option value="gamma de set">gamma de set</option>
+                                            <option value="gamma bàsica de vuit">gamma bàsica de vuit</option>
+                                            <option value="gamma de nou">gamma de nou</option>
+                                            <option value="gamma de deu">gamma de deu</option>
+                                            <option value="gamma d’onze">gamma d’onze</option>
+                                            <option value="gamma de dotze">gamma de dotze</option>
+                                            <option value="gamma de tretze">gamma de tretze</option>
+                                            <option value="gamma de catorze">gamma de catorze</option>
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Gamma del castell alternativa detallada</em>
+                                        <select data-placeholder="Escull Alteració de reforç..." class="chosen-select" tabindex="-1">
+                                            <option value="gamma bàsica de cinc ">gamma bàsica de cinc </option>
+                                            <option value="gamma bàsica de sis">gamma bàsica de sis</option>
+                                            <option value="gamma bàsica de set">gamma bàsica de set</option>
+                                            <option value="gamma bàsica de vuit">gamma bàsica de vuit</option>
+                                            <option value="gamma bàsica de nou">gamma bàsica de nou</option>
+                                            <option value="gamma bàsica de deu">gamma bàsica de deu</option>
+                                            <option value="gamma d’onze">gamma d’onze</option>
+                                            <option value="gamma de dotze">gamma de dotze</option>
+                                            <option value="gamma de tretze">gamma de tretze</option>
+                                            <option value="gamma de catorze">gamma de catorze</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Índexs</legend>
+                    <div class="section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="spacer">
+                                        <em>Índex TpC</em>
+                                        <select data-placeholder="Escull Índex TpC..." class="chosen-select" tabindex="-1" id="indexTpc">
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Coordenada X TpC</em>
+                                        <select data-placeholder="Escull Coordenada X TpC..." class="chosen-select" tabindex="-1" id="romans1">
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Coordenada Y TpC</em>
+                                        <select data-placeholder="Escull Coordenada Y TpC..." class="chosen-select" tabindex="-1" id="romans2">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="spacer">
+                                        <em>Índex GTpC</em>
+                                        <select data-placeholder="Escull Índex GTpC..." class="chosen-select" tabindex="-1" id="indexGtpc">
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Coordenada X GTpC</em>
+                                        <select data-placeholder="Escull Coordenada X GTpC..." class="chosen-select" tabindex="-1" id="romans3">
+                                        </select>
+                                    </div>
+                                    <div class="spacer">
+                                        <em>Coordenada Y GTpC</em>
+                                        <select data-placeholder="Escull Coordenada Y GTpC..." class="chosen-select" tabindex="-1" id="romans4">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Puntuació extreta del Concurs de Castells</legend>
+                    <div class="section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="spacer">
+                                        <div class="col-sm-3">
+                                            <label for="puntConCasDes" class="control-label">Puntuació Concurs/<small>castell descarregat</small></label>
+                                            <label for="grup" class="control-label">Grup</label>
+                                            <label for="subgrup" class="control-label">Subgrup</label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="puntsConCasDes" placeholder="Puntuació Concurs/castell descarregat">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="grup" placeholder="grup">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="subgrup" placeholder="subgrup">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Mitjana ponderada del temps d’execució cronometrat</label>
+                                    <input type="text" id="temps" value="" />
+                                    <!-- <label for="timepicker.[1]">Temps total d’execució de castell carregat*</label>
+                                    <input type="text" style="width: 70px;" id="timepicker.[1]" value="" />
+                                    <div>
+                                        <input type="text" name="timezone_example_2" id="timezone_example_2" value="" />
+                                    </div>
+                                    <label for="timepicker.[2]">Temps total d’execució de castell descarregat*:</label>
+                                    <input type="text" style="width: 70px;" id="timepicker.[2]" value="" /> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Dades estructurals</legend>
+                    <div class="section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="spacer">
+                                        <div class="col-sm-3">
+                                            <label for="numDeCasOp" class="control-label">Núm de castellers òptim</label>
+                                            <label for="alAproxCas" class="control-label">Alçada aproximada del castell (metres)</label>
+                                            <label for="pesEstCas" class="control-label">Pes estimat del castell (kg)</label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="numDeCasOp" placeholder="Núm de castellers òptim">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="alAproxCas" placeholder="Alçada aproximada del castell (metres)">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="pesEstCas" placeholder="Pes estimat del castell (kg)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Dades històriques</legend>
+                    <label for="CompanyName">Company Name</label>
+                    <input id="CompanyName" type="text" class="validate[required]" />
+                    <label for="Website">Website</label>
+                    <input id="Website" type="text" />
+                    <label for="CompanyEmail">CompanyEmail</label>
+                    <input id="CompanyEmail" type="text" />
+                </fieldset>
+                <fieldset>
+                    <legend>Enllaç Viquipèdia</legend>
+                    <label for="CompanyName">Company Name</label>
+                    <input id="CompanyName" type="text" class="validate[required]" />
+                    <label for="Website">Website</label>
+                    <input id="Website" type="text" />
+                    <label for="CompanyEmail">CompanyEmail</label>
+                    <input id="CompanyEmail" type="text" />
+                </fieldset>
+                <fieldset>
+                    <legend>Enllaç Youtube</legend>
+                    <label for="CompanyName">Company Name</label>
+                    <input id="CompanyName" type="text" class="validate[required]" />
+                    <label for="Website">Website</label>
+                    <input id="Website" type="text" />
+                    <label for="CompanyEmail">CompanyEmail</label>
+                    <input id="CompanyEmail" type="text" />
+                </fieldset>
+                <fieldset>
+                    <legend>Imatge</legend>
+                    <label for="CompanyName">Company Name</label>
+                    <input id="CompanyName" type="text" class="validate[required]" />
+                    <label for="Website">Website</label>
+                    <input id="Website" type="text" />
+                    <label for="CompanyEmail">CompanyEmail</label>
+                    <input id="CompanyEmail" type="text" />
+                </fieldset>
+                <fieldset>
+                    <legend>Codi QR</legend>
+                    <label for="CompanyName">Company Name</label>
+                    <input id="CompanyName" type="text" class="validate[required]" />
+                    <label for="Website">Website</label>
+                    <input id="Website" type="text" />
+                    <label for="CompanyEmail">CompanyEmail</label>
+                    <input id="CompanyEmail" type="text" />
+                </fieldset>
+                <p>
+                    <input id="SaveAccount" type="button" value="Submit form" />
+                </p>
+            </form>
+            <!-- Editar desde aquí  -->
+            <!-- Hasta aquí modificaremos -->
+        </div>
+        <!-- Archivo personalizado de Javascript -->
+        <!-- Librerías adicionales -->
+        <!-- <script src="lib/jquery.min.js"></script> -->
+        <script src="plugins/formToWizard/js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/i18n/jquery-ui-timepicker-addon-i18n.js"></script>
+        <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+        <script src="plugins/formToWizard/js/jquery.formToWizard.js"></script>
+        <script src="plugins/formToWizard/js/jquery.validationEngine.js"></script>
+        <script src="plugins/formToWizard/js/jquery.validationEngine-en.js"></script>
+        <script>
+        $(function() {
+            var $signupForm = $('#SignupForm');
+
+            $signupForm.validationEngine();
+
+            $signupForm.formToWizard({
+                submitButton: 'SaveAccount',
+                showProgress: true, //default value for showProgress is also true
+                nextBtnName: 'Continua ⏩',
+                prevBtnName: '⏪ Retrocedeix',
+                showStepNo: false,
+                validateBeforeNext: function() {
+                    return $signupForm.validationEngine('validate');
+                }
+            });
+
+
+            $('#txt_stepNo').change(function() {
+                $signupForm.formToWizard('GotoStep', $(this).val());
+            });
+
+            $('#btn_next').click(function() {
+                $signupForm.formToWizard('NextStep');
+            });
+
+            $('#btn_prev').click(function() {
+                $signupForm.formToWizard('PreviousStep');
+            });
+        });
+        </script>
+        <script src="./plugins/chosen/chosen.jquery.min.js" type="text/javascript"></script>
+        <script src="./plugins/chosen/docsupport/prism.js" type="text/javascript"></script>
+        <script src="plugins/flexdatalist/jquery.flexdatalist.min.js"></script>
+        <script type="text/javascript" src="./plugins/timepicker/include/ui-1.10.0/jquery.ui.core.min.js"></script>
+     <!--    <script type="text/javascript" src="./plugins/timepicker/include/ui-1.10.0/jquery.ui.widget.min.js"></script>
+        <script type="text/javascript" src="./plugins/timepicker/include/ui-1.10.0/jquery.ui.tabs.min.js"></script>
+        <script type="text/javascript" src="./plugins/timepicker/include/ui-1.10.0/jquery.ui.position.min.js"></script>
+        <script type="text/javascript" src="./plugins/timepicker/jquery.ui.timepicker.js?v=0.3.3"></script> -->
+        <script type="text/javascript" src="plugins/Timepicker-Addon/dist/jquery-ui-timepicker-addon.js"></script>
+        <script type="text/javascript" src="plugins/Timepicker-Addon/dist/jquery-ui-sliderAccess.js"></script>
+        <script src="lib/curso.js"></script>
+        <script type="text/javascript">
+        var config = {
+            '.chosen-select': {},
+            '.chosen-select-deselect': {
+                allow_single_deselect: true
+            },
+            '.chosen-select-no-single': {
+                disable_search_threshold: 10
+            },
+            '.chosen-select-no-results': {
+                no_results_text: 'Oops, nothing found!'
+            },
+            '.chosen-select-width': {
+                width: "95%"
+            }
+        }
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+        </script>
+    </body>
+
+</html>

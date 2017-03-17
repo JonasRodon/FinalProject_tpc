@@ -1,0 +1,193 @@
+<main>
+    <section class="cella">
+        <h1>{{cella.name}}</h1>
+        <img src="{{cella.imgSrc}}" width="100%">
+    </section>
+    <section class="cella">
+        <h1>Denominació i catalogació del castell</h1>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#description">estructura</a></li>
+            <li><a data-toggle="tab" href="#levelHigth">pisos d’alçada</a></li>
+            <li><a data-toggle="tab" href="#estructureType">tipus d’estructura</a></li>
+            <li><a data-toggle="tab" href="#tecnicCons">tècnica de construcció</a></li>
+            <li><a data-toggle="tab" href="#gamma">gamma</a></li>
+        </ul>
+        <div class="tab-content" style="color:black;">
+            <div id="description" class="tab-pane fade in active">
+                <h3>{{cella.catInfo.esName}}</h3>
+                <p>{{cella.catInfo.esDescription}}</p>
+            </div>
+            <div id="levelHigth" class="tab-pane fade">
+                <h3>{{cella.catInfo.levelHigth.number}}</h3>
+                <p>Els castells poden ser de 4, 5, 6, 7, 8, 9 i fins i tot 10 pisos d’alçada. [1] Juntament amb els pisos d’alçada, l’estructura és un dels dos paràmetres bàsics per distingir els diferents tipus de castells. [2] Aquí jo hi posaria tota la fila de castells de 6 1. «Tipus de castells». CCCC, 2007. [Consulta: 9 març del 2017]. 2. Almirall, Josep. «Tots els castells». A: Castells, tocant el cel amb la mà. Triangle Postals, 2011, pp.113-211</p>
+            </div>
+            <div id="estructureType" class="tab-pane fade">
+                <h3>{{cella.catInfo.esType}}</h3>
+                <p>Els castells es diferencien segons dos tipus d’estructura: les estructures simples i les estructures compostes o combinades.[1] El pilar és una estructura simple, com ho són també el dos (o torre), el tres i el quatre. [1] 1. «Diccionari casteller». TERMCAT, 2007. [Consulta: 11 novembre del 2012]..</p>
+            </div>
+            <div id="tecnicCons" class="tab-pane fade">
+                <h3>{{cella.catInfo.consTec}}</h3>
+                <p></p>
+            </div>
+            <div id="gamma" class="tab-pane fade">
+                <h3>{{cella.catInfo.gamma}}</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <section class="cella">
+        <h1>Parts del castell</h1>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#pinya">pinya</a></li>
+            <li><a data-toggle="tab" href="#tronc">tronc</a></li>
+            <li><a data-toggle="tab" href="#pom">pom de dalt</a></li>
+            <li><a data-toggle="tab" href="#folre">folre</a></li>
+            <li><a data-toggle="tab" href="#manilles">manilles</a></li>
+        </ul>
+        <div class="tab-content" style="color:black;">
+            <div id="pinya" class="tab-pane fade in active">
+                <h3>{{cella.parts.pinya}}</h3>
+                <p></p>
+            </div>
+            <div id="tronc" class="tab-pane fade">
+                <h3>{{cella.parts.tronc}}</h3>
+                <p></p>
+            </div>
+            <div id="pom" class="tab-pane fade">
+                <h3>{{cella.parts.pom}}</h3>
+                <p></p>
+            </div>
+            <div id="folre" class="tab-pane fade">
+                <h3>{{cella.parts.folre}}</h3>
+                <p></p>
+            </div>
+            <div id="manilles" class="tab-pane fade">
+                <h3>{{cella.parts.manilles}}</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <section class="cella">
+        <h1>Taula de puntuacions del Concurs de Castells 2016</h1>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#pointsCar">punts carregat</a></li>
+            <li><a data-toggle="tab" href="#pointsDes">punts descarregat</a></li>
+            <li><a data-toggle="tab" href="#group">grup</a></li>
+            <li><a data-toggle="tab" href="#subGroup">subgrup</a></li>
+        </ul>
+        <div class="tab-content" style="color:black;">
+            <div id="pointsCar" class="tab-pane fade in active">
+                <h3>{{cella.score.pointsCar}}</h3>
+                <p></p>
+            </div>
+            <div id="pointsDes" class="tab-pane fade">
+                <h3>{{cella.score.pointsDes}}</h3>
+                <p></p>
+            </div>
+            <div id="group" class="tab-pane fade">
+                <h3>{{cella.score.group}}</h3>
+                <p></p>
+            </div>
+            <div id="subGroup" class="tab-pane fade">
+                <h3>{{cella.score.subGroup}}</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <section class="cella">
+        <h1>Estadística</h1>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#numCollDes">núm. de colles que han descarregat</a></li>
+            <li><a data-toggle="tab" href="#numCollCar">núm. de colles que l’han carregat</a></li>
+            <li><a data-toggle="tab" href="#numCollIn">núm. de colles que l’han intentat</a></li>
+        </ul>
+        <div class="tab-content" style="color:black;">
+            <div id="numCollDes" class="tab-pane fade in active">
+                <h3>{{cella.metrics.numCollDes}}</h3>
+                <p></p>
+            </div>
+            <div id="numCollCar" class="tab-pane fade">
+                <h3>{{cella.metrics.numCollCar}}</h3>
+                <p></p>
+            </div>
+            <div id="numCollIn" class="tab-pane fade">
+                <h3>{{cella.metrics.numCollIn}}</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <section class="cella">
+        <h1>Història “antiga”</h1>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#hOyearCasCar">Any de consecució absolut del castell carregat</a></li>
+            <li><a data-toggle="tab" href="#hOfirstCollCar">Colla pionera en assolir el castell carregat</a></li>
+            <li><a data-toggle="tab" href="#hOyearCasDes">Any de consecució absolut del castell descarregat</a></li>
+            <li><a data-toggle="tab" href="#hOfirstCollDes">Colla pionera en assolir el castell descarregat</a></li>
+        </ul>
+        <div class="tab-content" style="color:black;">
+            <div id="yearCasCar" class="tab-pane fade in active">
+                <h3>{{cella.hOld.yearCasCar}}</h3>
+                <p></p>
+            </div>
+            <div id="firstCollCar" class="tab-pane fade">
+                <h3>{{cella.hOld.firstCollCar}}</h3>
+                <p></p>
+            </div>
+            <div id="yearCasDes" class="tab-pane fade">
+                <h3>{{cella.hOld.yearCasDes}}</h3>
+                <p></p>
+            </div>
+            <div id="firstCollDes" class="tab-pane fade">
+                <h3>{{cella.hOld.firstCollDes}}</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <section class="cella">
+        <h1>Història “recent”</h1>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#hNyearCasCar">Any de consecució absolut del castell carregat</a></li>
+            <li><a data-toggle="tab" href="#hNfirstCollCar">Colla pionera en assolir el castell carregat</a></li>
+            <li><a data-toggle="tab" href="#hNyearCasDes">Any de consecució absolut del castell descarregat</a></li>
+            <li><a data-toggle="tab" href="#hNfirstCollDes">Colla pionera en assolir el castell descarregat</a></li>
+        </ul>
+        <div class="tab-content" style="color:black;">
+            <div id="yearCasCar" class="tab-pane fade in active">
+                <h3>{{cella.hNew.yearCasCar}}</h3>
+                <p></p>
+            </div>
+            <div id="firstCollCar" class="tab-pane fade">
+                <h3>{{cella.hNew.firstCollCar}}</h3>
+                <p></p>
+            </div>
+            <div id="yearCasDes" class="tab-pane fade">
+                <h3>{{cella.hNew.yearCasDes}}</h3>
+                <p></p>
+            </div>
+            <div id="firstCollDes" class="tab-pane fade">
+                <h3>{{cella.hNew.firstCollDes}}</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <section class="cella">
+        <ul class="imgSlider">
+            <li><img width="400px" src="{{cella.imgScr[0]}}"></li>
+            <li><img width="400px" src="{{cella.imgScr[1]}}"></li>
+            <li><img width="400px" src="{{cella.imgScr[2]}}"></li>
+            <li><img width="400px" src="{{cella.imgScr[3]}}"></li>
+            <li><img width="400px" src="{{cella.imgScr[4]}}"></li>
+            <li><img width="400px" src="{{cella.imgScr[5]}}"></li>
+        </ul>
+    </section>
+    <section class="cella">
+        <ul class="videoSlider">
+            <li><img width="400px" src="{{cella.vidScr[0]}}"></li>
+            <li><img width="400px" src="{{cella.vidScr[1]}}"></li>
+            <li><img width="400px" src="{{cella.vidScr[2]}}"></li>
+            <li><img width="400px" src="{{cella.vidScr[3]}}"></li>
+            <li><img width="400px" src="{{cella.vidScr[4]}}"></li>
+            <li><img width="400px" src="{{cella.vidScr[5]}}"></li>
+        </ul>
+    </section>
+</main>

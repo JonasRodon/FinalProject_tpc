@@ -1,0 +1,65 @@
+{
+    "celles": [{
+            "cella": [{
+                "position": {
+                    "number": "",
+                    "gNumber": "",
+                    "posRow": "",
+                    "posCol": "",
+                    "bigPosRow": "",
+                    "bigPosCol": ""
+                },
+                "details": {
+                    "name": "",
+                    "keyName": "",
+                    "tumbNailSrc": "",
+                    "esName": "",
+                    "esDescription": "",
+                    "esType": "",
+                    "consTec": "",
+                    "gamma": "",
+                },
+                "parts": {
+                    "pinya": "",
+                    "tronc": "",
+                    "pom": "",
+                    "folre": "",
+                    "manilles": ""
+                },
+                "score": {
+                    "pointsCar": "",
+                    "pointsDes": "",
+                    "group": "",
+                    "subGroup": ""
+                },
+                "metrics": {
+                    "numCollDes": "",
+                    "numCollCar": "",
+                    "numCollIn": ""
+                },
+                "hOld": {
+                    "yearCasCar": "",
+                    "firstCollCar": "",
+                    "yearCasDes": "",
+                    "firstCollDes": ""
+                },
+                "hNew": {
+                    "yearCasCar": "",
+                    "firstCollCar": "",
+                    "yearCasDes": "",
+                    "firstCollDes": ""
+                },
+                "imgScr": [{
+                    "src": "",
+                    "name": "",
+                    "number": ""
+                }],
+                "vidScr": [{
+                    "src": "",
+                    "name": "",
+                    "number": ""
+                }]
+            }]
+        }
+    }]
+}
