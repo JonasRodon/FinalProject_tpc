@@ -178,8 +178,33 @@ $(document).ready(function ($) {
   // })
 
   // $('#tabs').tabs()
-  $('#temps').datetimepicker({
+  var config = {
+    '.chosen-select': {},
+    '.chosen-select-deselect': {
+      allow_single_deselect: true
+    },
+    '.chosen-select-no-single': {
+      disable_search_threshold: 10
+    },
+    '.chosen-select-no-results': {
+      no_results_text: 'Oops, nothing found!'
+    },
+    '.chosen-select-width': {
+      width: '95%'
+    }
+  }
+  for (var selector in config) {
+    $(selector).chosen(config[selector])
+  }
+  $('#temps1').datetimepicker({
     timeFormat: 'HH:mm:ss',
+    stepHour: 1,
+    stepMinute: 1,
+    stepSecond: 1
+  })
+  $('#temps2').datetimepicker({
+    timeFormat: 'HH:mm:ss',
+    stepHour: 1,
     stepMinute: 1,
     stepSecond: 1
   })

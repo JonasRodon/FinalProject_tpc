@@ -98,6 +98,9 @@ var data = [{'1': 'I',
   '98': 'XCVIII',
   '99': 'XCIX',
   '100': 'C'}]
-for (var i = 1; i < data[0][0].length; i++) {
-  console.log(data[0][i])
+// for(var i = 1; i <= 100; i++) {
+//   console.log(data[0][i])
+// }
+function roman (n) {
+  return data[0][n]
 }

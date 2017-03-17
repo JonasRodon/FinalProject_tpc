@@ -178,9 +178,7 @@ $(document).ready(function ($) {
   // })
 
   // $('#tabs').tabs()
-  $('#temps').datetimepicker({
-    timeFormat: 'HH:mm:ss',
-    stepMinute: 1,
-    stepSecond: 1
-  })
+  $('#temps').timepicker(
+  $.timepicker.regional['es']
+)
 })
