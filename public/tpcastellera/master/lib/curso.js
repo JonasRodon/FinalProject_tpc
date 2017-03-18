@@ -196,13 +196,13 @@ $(document).ready(function ($) {
   for (var selector in config) {
     $(selector).chosen(config[selector])
   }
-  $('#temps1').datetimepicker({
+  $('#temps1').timepicker({
     timeFormat: 'HH:mm:ss',
     stepHour: 1,
     stepMinute: 1,
     stepSecond: 1
   })
-  $('#temps2').datetimepicker({
+  $('#temps2').timepicker({
     timeFormat: 'HH:mm:ss',
     stepHour: 1,
     stepMinute: 1,
