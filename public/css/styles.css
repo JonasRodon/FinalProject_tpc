@@ -31,24 +31,20 @@
     }
     
     .container2 {
-        padding-right: 30px;
-        padding-left: 15px;
-    }
-    
-    .container2 {
-        width: 98%;
-        max-width: 98%;
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 5px 25px 5px;
     }
     
     @media (min-width: 48em) {
         .container2 {
-            max-width: 98%;
+            max-width: 100%;
         }
     }
     
     @media (min-width: 75em) {
         .container2 {
-            max-width: 98%;
+            max-width: 100%;
         }
     }
     
@@ -92,8 +88,8 @@
     }
     
     .responsive-table thead th {
-        background-color: #1d96b2;
-        border: 1px solid #1d96b2;
+        /*background-color: #1d96b2;
+        border: 1px solid #1d96b2;*/
         font-weight: normal;
         text-align: center;
         color: white;
@@ -121,7 +117,7 @@
     
     .responsive-table th,
     .responsive-table td {
-        padding: .5em;
+        /*padding: .5em;*/
         vertical-align: middle;
     }
     
@@ -150,7 +146,7 @@
     @media (min-width: 75em) {
         .responsive-table th,
         .responsive-table td {
-            padding: .75em;
+    /*        padding: .75em;*/
         }
     }
     
@@ -186,8 +182,8 @@
     
     .responsive-table tbody tr {
         margin-bottom: 1em;
-        border: 2px solid #1d96b2;
-    }
+/*        border: 2px solid #1d96b2;
+*/    }
     
     @media (min-width: 48em) {
         .responsive-table tbody tr {
@@ -207,8 +203,8 @@
     }
     
     .responsive-table tbody th[scope="row"] {
-        background-color: #1d96b2;
-        color: white;
+/*        background-color: #1d96b2;
+*/        color: white;
         position: relative;
         padding: 0px;
     }
@@ -258,16 +254,18 @@
             width: 100%;
         }
         .tap {
-            -webkit-border-radius: 5px 15px 0 0;
-            border-radius: 5px 15px 0 0;
+            /*-webkit-border-radius: 5px 15px 0 0;
+            border-radius: 5px 15px 0 0;*/
+            width: 64px;
+            height: 64px;
         }
         .btn-group-lg>.btn,
         .castell {
-            padding: 32px 32px;
+            /*padding: 32px 32px;*/
             font-size: 18px;
             line-height: 1.3333333;
-            border-radius: 6px;
-            width: 64px;
+/*            border-radius: 6px;
+*/            width: 64px;
             height: 64px;
         }
 
@@ -336,7 +334,7 @@ main {
     width: 50rem;
 }
 
-header {
+/*header {
     background: url(../imgs/head.jpg) center center;
     background-size: cover;
     height: 10rem;
@@ -346,7 +344,7 @@ header {
     right: 0;
     transition: transform .5s, opacity .3s;
     z-index: 0;
-}
+}*/
 
 input,
 .card {

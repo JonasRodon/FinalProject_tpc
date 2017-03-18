@@ -1,4 +1,4 @@
-   var myScroll
+   var myScroll, myScroll2
 
    function loaded () {
      myScroll = new IScroll('#wrapper ', {
@@ -27,7 +27,6 @@
        speed: 2000
      })
    })
-
    function isPassive () {
      var supportsPassiveOption = false
      try {

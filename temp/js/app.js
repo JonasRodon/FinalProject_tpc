@@ -1,4 +1,4 @@
-   var myScroll
+   var myScroll, myScroll2
 
    function loaded () {
      myScroll = new IScroll('#wrapper ', {
