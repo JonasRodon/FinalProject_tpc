@@ -14,7 +14,7 @@ app.get('/', function (request, response) {
   response.redirect('/index.html')
 })
 app.get('/001', function (request, response) {
-  response.redirect('/master/001.html')
+  response.redirect('/master/p.html')
 })
 app.get('/tpcastellera', function (request, response) {
   response.redirect('/tpcastellera/master/index.html')
