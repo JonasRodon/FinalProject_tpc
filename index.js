@@ -13,6 +13,9 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.get('/', function (request, response) {
   response.redirect('/index.html')
 })
+app.get('/001', function (request, response) {
+  response.redirect('/master/001.html')
+})
 app.get('/tpcastellera', function (request, response) {
   response.redirect('/tpcastellera/master/index.html')
 })

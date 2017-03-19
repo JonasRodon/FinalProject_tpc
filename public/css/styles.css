@@ -256,8 +256,10 @@
         .tap {
             /*-webkit-border-radius: 5px 15px 0 0;
             border-radius: 5px 15px 0 0;*/
-            width: 64px;
-            height: 64px;
+            width: 70px;
+            height: 70px;
+            background-size: 70px 70px;
+            background-repeat: no-repeat;
         }
         .btn-group-lg>.btn,
         .castell {
@@ -265,8 +267,10 @@
             font-size: 18px;
             line-height: 1.3333333;
 /*            border-radius: 6px;
-*/            width: 64px;
-            height: 64px;
+*/          width:  70px;
+            height: 70px;
+            background-size: 70px 70px;
+            background-repeat: no-repeat;
         }
 
 #wrapper {
