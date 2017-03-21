@@ -25,22 +25,33 @@
             //     }
             //     tabla.innerHTML = '</tr>'
             // }
-            var rows = filas; //here's your number of rows and columns
-            var cols = columnas;
-            var contador = 1
-            var table = $('<table><tbody>');
-            for (var r = 0; r < rows; r++) {
-                var tr = $('<tr>');
-                for (var c = 0; c < cols; c++)
-                    $('<td>' + crearCela('P-d-6', 6, contador) + '</td>').appendTo(tr);
+            var tabla = document.createElement('table')
+            $.getJSON('lib/db.json', function(data) {
+                var output = []
+                for (var i in data.castells) {
+                    output[i] = data.castells[i].keyName
+                    console.log(output[i])
+                }
+                var rows = filas; //here's your number of rows and columns
+                var cols = columnas;
+                var contador = 1
+                var tabla = $('<table><tbody>');
+                for (var r = 0; r < rows; r++) {
+                    var tr = $('<tr>');
+                    for (var c = 0; c < cols; c++) {
+                        if (output[i] == data.castells[i].position.posRow && output[i] == data.castells[i].position.posCol) {
+                            console.log(name(name))
+                            $('<td>' + crearCela(name(name), 6, contador) + '</td>').appendTo(tr)
+                        }
+                    }
                     contador++
-                     //fill in your cells with something meaningful here
-                tr.appendTo(table);
-            }
+                    //fill in your cells with something meaningful here
+                }
+                tr.appendTo(tabla);
 
-            table.appendTo('body'); //Add your resulting table to the DOM, I'm using the body tag for example
+                tabla.appendTo('body'); //Add your resulting table to the DOM, I'm using the body tag for example
+            })
         }
-
         function crearCela(n, g, contador) {
             n = n.split('-')
             var jointText = n.join('')
@@ -48,9 +59,9 @@
             for (var i = 0; i <= n.length; i++) {
                 if (n.length === 3) {
                     if (n[0].length === 2) {
-                        text = '<text id="a1" transform="translate(15.08 81.52)" class="cela">' + n[0] + '</text><text id="a2" transform="translate(66.5 81.52) scale(0.91 1)" class="cela">' + n[1] + '</text><text id="a3" transform="translate(86.01 81.52)" class="cela">' + n[2] + '</text>'
+                        text += '<text id="a1" transform="translate(15.08 81.52)" class="cela">' + n[0] + '</text><text id="a2" transform="translate(66.5 81.52) scale(0.91 1)" class="cela">' + n[1] + '</text><text id="a3" transform="translate(86.01 81.52)" class="cela">' + n[2] + '</text>'
                     } else {
-                        text = '<text id="a1" transform="translate(34.08 81.52)" class="cela">' + n[0] + '</text><text id="a2" transform="translate(61.5 81.52) scale(0.91 1)" class="cela">' + n[1] + '</text><text id="a3" transform="translate(81.01 81.52)" class="cela">' + n[2] + '</text>'
+                        text += '<text id="a1" transform="translate(34.08 81.52)" class="cela">' + n[0] + '</text><text id="a2" transform="translate(61.5 81.52) scale(0.91 1)" class="cela">' + n[1] + '</text><text id="a3" transform="translate(81.01 81.52)" class="cela">' + n[2] + '</text>'
                     }
                 } else if (n.length === 4) {
                     if (n[3].length === 2) {
@@ -60,15 +71,15 @@
                     }
                 } else if (n.length === 5) {
                     if (n[2].length === 2) {
-                        text = '<text id="a1" transform="translate(0.44 81.52)" class="cela">' + n[0] + '</text><text id="a2" transform="translate(28.87 81.52) scale(0.91 1)" class="cela">' + n[1] + '</text><text id="a3" transform="translate(42.37 81.52)" class="celaSpecial">' + n[2] + '</text><text id="a4" transform="translate(99.37 81.52)" class="cela">' + n[3] + '</text><text id="a5" transform="translate(109.37 81.52)" class="cela">' + n[4] + '</text>'
+                        text += '<text id="a1" transform="translate(0.44 81.52)" class="cela">' + n[0] + '</text><text id="a2" transform="translate(28.87 81.52) scale(0.91 1)" class="cela">' + n[1] + '</text><text id="a3" transform="translate(42.37 81.52)" class="celaSpecial">' + n[2] + '</text><text id="a4" transform="translate(99.37 81.52)" class="cela">' + n[3] + '</text><text id="a5" transform="translate(109.37 81.52)" class="cela">' + n[4] + '</text>'
                     } else {
-                        text = '<text id="a1" transform="translate(19.44 81.52)" class="cela">' + n[0] + '</text><text id="a2" transform="translate(42.87 81.52) scale(0.91 1)" class="cela">' + n[1] + '</text><text id="a3" transform="translate(64.37 81.52)" class="cela">' + n[2] + '</text><text id="a4" transform="translate(87.37 81.52)" class="cela">' + n[3] + '</text><text id="a5" transform="translate(98.37 81.52)" class="cela">' + n[4] + '</text>'
+                        text += '<text id="a1" transform="translate(19.44 81.52)" class="cela">' + n[0] + '</text><text id="a2" transform="translate(42.87 81.52) scale(0.91 1)" class="cela">' + n[1] + '</text><text id="a3" transform="translate(64.37 81.52)" class="cela">' + n[2] + '</text><text id="a4" transform="translate(87.37 81.52)" class="cela">' + n[3] + '</text><text id="a5" transform="translate(98.37 81.52)" class="cela">' + n[4] + '</text>'
                     }
                 } else if (n.length === 6) {
                     if (n[2].length === 2) {
-                        text = '<text id="a1" transform="translate(11.08 81.52)" class="cela">' + n[0] + '</text><text id="a2" transform="translate(39.5 81.52) scale(0.91 1)" class="cela">' + n[1] + '</text><text id="a3" transform="translate(59.01 81.52)" class="cela">' + n[2] + '</text><text id="a4" transform="translate(89.01 81.52)" class="cela">' + n[3] + '</text><text id="a5" transform="translate(93.01 81.52)" class="cela">' + n[4] + '</text><text id="a6" transform="translate(124.01 81.52)" class="cela">' + n[5] + '</text>'
+                        text += '<text id="a1" transform="translate(11.08 81.52)" class="cela">' + n[0] + '</text><text id="a2" transform="translate(39.5 81.52) scale(0.91 1)" class="cela">' + n[1] + '</text><text id="a3" transform="translate(59.01 81.52)" class="cela">' + n[2] + '</text><text id="a4" transform="translate(89.01 81.52)" class="cela">' + n[3] + '</text><text id="a5" transform="translate(93.01 81.52)" class="cela">' + n[4] + '</text><text id="a6" transform="translate(124.01 81.52)" class="cela">' + n[5] + '</text>'
                     } else {
-                        text = '<text id="a1" transform="translate(11.08 81.52)" class="cela">' + n[0] + '</text><text id="a2" transform="translate(39.5 81.52) scale(0.91 1)" class="cela">' + n[1] + '</text><text id="a3" transform="translate(59.01 81.52)" class="cela">' + n[2] + '</text><text id="a4" transform="translate(83.01 81.52)" class="cela">' + n[3] + '</text><text id="a5" transform="translate(93.01 81.52)" class="cela">' + n[4] + '</text><text id="a6" transform="translate(116.01 81.52)" class="cela">' + n[5] + '</text>'
+                        text += '<text id="a1" transform="translate(11.08 81.52)" class="cela">' + n[0] + '</text><text id="a2" transform="translate(39.5 81.52) scale(0.91 1)" class="cela">' + n[1] + '</text><text id="a3" transform="translate(59.01 81.52)" class="cela">' + n[2] + '</text><text id="a4" transform="translate(83.01 81.52)" class="cela">' + n[3] + '</text><text id="a5" transform="translate(93.01 81.52)" class="cela">' + n[4] + '</text><text id="a6" transform="translate(116.01 81.52)" class="cela">' + n[5] + '</text>'
                     }
                 }
             }
@@ -77,166 +88,72 @@
             totalText += '</g></svg>'
             return totalText
         }
-
         function gamma(g) {
-            var result
-            switch (g) {
-                case 6:
-                    result = 'De6'
-                    break
-                case 7:
-                    result = 'De7'
-                    break
-                case 8:
-                    result = 'De8'
-                    break
-                case 9:
-                    result = 'De9'
-                    break
-                case 'extra':
-                    result = 'DeEx'
-                    break
-                default:
-                    result = 'DeDef'
-            }
-            return result
+                var result
+                switch (g) {
+                    case 6:
+                        result = 'De6'
+                        break
+                    case 7:
+                        result = 'De7'
+                        break
+                    case 8:
+                        result = 'De8'
+                        break
+                    case 9:
+                        result = 'De9'
+                        break
+                    case 'extra':
+                        result = 'DeEx'
+                        break
+                    default:
+                        result = 'DeDef'
+                }
+                return result
         }
-        crearTabla(filas, columnas)
+        function name(name) {
+                var tname = ''
+                name.split('')
+                if (name[0] === 'P') {
+                    tname += name[0] + '-' + name[1] + '-' + name[2]
+                    if (typeof name[3] !== 'undefined') {
+                        tname += '-' + name[3]
+                    }
+                    if (typeof name[4] !== 'undefined') {
+                        tname += '-' + name[4]
+                    }
+                    if (typeof name[5] !== 'undefined') {
+                        tname += '-' + name[5]
+                    }
+                } else if (name[1] !== 'd') {
+                    tname += name[0] + name[1] + '-' + name[2]
+                    if (typeof name[3] !== 'undefined') {
+                        tname += '-' + name[3]
+                    }
+                    if (typeof name[4] !== 'undefined') {
+                        tname += '-' + name[4]
+                    }
+                    if (typeof name[5] !== 'undefined') {
+                        tname += '-' + name[5]
+                    }
+
+                } else {
+                    tname += name[0] + '-' + name[1] + '-' + name[2]
+                    if (typeof name[3] !== 'undefined') {
+                        tname += '-' + name[3]
+                    }
+                    if (typeof name[4] !== 'undefined') {
+                        tname += '-' + name[4]
+                    }
+                    if (typeof name[5] !== 'undefined') {
+                        tname += '-' + name[5]
+                    }
+                }
+                return tname
+        }     
+        crearTabla(filas, columnas)        
     }
-    generaTabla(9, 22)
-        //     // Obtener la referencia del elemento body
-        //     var body = document.getElementsByTagName('body')[0]
-
-    //     // Crea un elemento <table> y un elemento <tbody>
-    //     var tabla = document.createElement('table')
-    //     var tblBody = document.createElement('tbody')
-    //     var fila, columna, contador = 0
-    //         // Crea las celdas
-    //     for (var i = 1; i <= n; i++) {
-    //         for (var j = 1; j <= c; j++) {
-    //             // Crea las hileras de la tabla
-    //             fila = i
-    //             var hilera = document.createElement('tr')
-    //             $(hilera).addClass('n' + fila)
-    //             console.log(fila)
-    //             columna = j
-    //             console.log(columna)
-    //                 // Crea un elemento <td> y un nodo de texto, haz que el nodo de
-    //                 // texto sea el contenido de <td>, ubica el elemento <td> al final
-    //                 // de la hilera de la tabla
-    //             var celda = document.createElement('td')
-    //             $(celda).addClass('cord-' + fila + '-' + columna)
-    //             contador++
-    //             celdaContent = document.createElement('svg')
-    //                 // var celdaContent = document.createElement(crearCela('P-d-6', 6,contador));
-
-    //             // celdaContent.type = 'svg'
-    //             $('cord-' + fila + '-' + columna).html(function() {
-    //                 return crearCela('P-d-6', 6)
-    //             });
-    //             //$(celda).html(celdaContent)
-    //             //celda.appendChild(celdaContent)
-    //             hilera.appendChild(celda)
-    //         }
-
-    //         // agrega la hilera al final de la tabla (al final del elemento tblbody)
-    //         tblBody.appendChild(hilera)
-
-    //         // posiciona el <tbody> debajo del elemento <table>
-    //         tabla.appendChild(tblBody)
-    //     }
-    //     // appends <table> into <body>
-    //     body.appendChild(tabla)
-    //         // modifica el atributo "border" de la tabla y lo fija a "2";
-    //     tabla.setAttribute('border', '2')
-    //}
-    // $.getJSON('lib/db.json', function(data) {
-    //        var output = '<select name="castells" form="castells">'
-    //        for (var i in data.castells) {
-    //            output += '  <option value="' + data.castells[i].position.posRow + '-' + data.castells[i].position.posCol + '">' + data.castells[i].position.itpc + '-' + data.castells[i].keyName + '</option>'
-    //        }
-    //            output += '</select>'
-
-    //        document.getElementById('placeholder').innerHTML = output;
-    //    })
-    //     $.getJSON('lib/db.json', function(data) {
-    //     var output = '<select name="castells" form="castells">'
-    //     for (var i in data.castells) {
-    //         output += '  <option value="' + data.castells[i].position.posRow + '-' + data.castells[i].position.posCol + '">' + data.castells[i].position.itpc + '-' + data.castells[i].keyName + '</option>'
-    //     }
-    //         output += '</select>'
-
-    //     document.getElementById('placeholder').innerHTML = output;
-    // })
-    //    $.getJSON('lib/db.json', function(data) {
-    //        var output = '<ul>'
-    //        for (var i in data.castells) {
-    //            output += '<li>' + data.castells[i].keyName + '</li>'
-    //            output += '<li>' + data.castells[i].position.itpc + '</li>'
-    //            output += '<li>' + data.castells[i].position.gitpc + '</li>'
-    //            output += '<li>' + data.castells[i].position.posCol
-    // + '</li>'
-    //            output += '<li>' + data.castells[i].position.posRow
-    // + '</li>'
-    //            output += '<li>' + data.castells[i].position.gposCol
-    // + '</li>'
-    //            output += '<li>' + data.castells[i].details.name + '</li>'
-    //            output += '<li>' + data.castells[i].details.esName + '</li>'
-    //            output += '<li>' + data.castells[i].details.tumbNailSrc + '</li>'
-    //            output += '<li>' + data.castells[i].details.esDescription + '</li>'
-    //            output += '<li>' + data.castells[i].details.esType + '</li>'
-    //            output += '<li>' + data.castells[i].details.consTec + '</li>'
-    //            output += '<li>' + data.castells[i].details.gamma + '</li>'
-    //            output += '<li>' + data.castells[i].parts.pinya + '</li>'
-    //            output += '<li>' + data.castells[i].parts.tronc + '</li>'
-    //            output += '<li>' + data.castells[i].parts.pom + '</li>'
-    //            output += '<li>' + data.castells[i].parts.folre + '</li>'
-    //            output += '<li>' + data.castells[i].parts.manilles + '</li>'
-    //            output += '<li>' + data.castells[i].score.Pointscar + '</li>'
-    //            output += '<li>' + data.castells[i].score.Pointsdes + '</li>'
-    //            output += '<li>' + data.castells[i].score.group + '</li>'
-    //            output += '<li>' + data.castells[i].score.subGroup + '</li>'
-    //            output += '<li>' + data.castells[i].metrics.numCollDes + '</li>'
-    //            output += '<li>' + data.castells[i].metrics.firstCollCar + '</li>'
-    //            output += '<li>' + data.castells[i].metrics.numCollIn + '</li>'
-    //            output += '<li>' + data.castells[i].hOld.yearCasCar + '</li>'
-    //            output += '<li>' + data.castells[i].hOld.firstCollCar + '</li>'
-    //            output += '<li>' + data.castells[i].hOld.yearCasDes + '</li>'
-    //            output += '<li>' + data.castells[i].hOld.firstCollDes + '</li>'
-    //            output += '<li>' + data.castells[i].hNew.yearCasCar + '</li>'
-    //            output += '<li>' + data.castells[i].hNew.firstCollCar + '</li>'
-    //            output += '<li>' + data.castells[i].hNew.yearCasDes + '</li>'
-    //            output += '<li>' + data.castells[i].hNew.firstCollDes + '</li>'
-    //            output += '<li>' + data.castells[i].imgScr.number + '</li>'
-    //            output += '<li>' + data.castells[i].imgScr.name + '</li>'
-    //            output += '<li>' + data.castells[i].imgScr.src + '</li>'
-    //            output += '<li>' + data.castells[i].vidScr.number + '</li>'
-    //            output += '<li>' + data.castells[i].vidScr.name + '</li>'
-    //            output += '<li>' + data.castells[i].vidScr.src + '</li>'
-    //        }
-
-    //        output += '</ul>'
-    //        document.getElementById('placeholder').innerHTML = output;
-    //    })
-    // var cela = () => {
-    //     $.getJSON('lib/db.json', function(data) {
-    //         var output = '<select name="castells" form="castells">'
-    //         for (var i in data.castells) {
-    //             // output += '  <option value="' + data.castells[i].position.posRow + '-' + data.castells[i].position.posCol + '">' + data.castells[i].position.itpc + '-' + data.castells[i].keyName + '</option>'
-    //             if (data.castells[i].position.posRow === j && data.castells[i].position.posCol === i) {
-    //                 var transKey = () => {
-    //                         var array = data.castells[i].keyName.split('')
-
-    //                     }
-    //                     // output = crearCela (transKey, g)
-    //                 output = crearCela('Pd4', 6)
-
-    //             }
-    //         }
-
-    //         document.getElementById('cord-' + i + '-' + j).innerHTML = output;
-    //     })
-    // }
+    generaTabla(9, 22)   
     </script>
 </body>
 
