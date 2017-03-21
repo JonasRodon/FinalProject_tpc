@@ -9,11 +9,37 @@
 
 <body>
     <table id="duck"></table>
-
     <div id="placeholder"></div>
     <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script>
     function generaTabla(filas, columnas) {
+
+        function crearTabla(filas, columnas) {
+            // var tabla = document.createElement('table')
+            // var contador = 1
+            // for (var i = 0; i < columnas; i++) {
+            //     tabla.innerHTML = '<tr>'
+            //     for (var j = 0; j < filas; i++) {
+            //         tabla.innerHTML = '<td>' + crearCela('P-d-6', 6, contador) + '</td>'
+            //         contador++
+            //     }
+            //     tabla.innerHTML = '</tr>'
+            // }
+            var rows = filas; //here's your number of rows and columns
+            var cols = columnas;
+            var contador = 1
+            var table = $('<table><tbody>');
+            for (var r = 0; r < rows; r++) {
+                var tr = $('<tr>');
+                for (var c = 0; c < cols; c++)
+                    $('<td>' + crearCela('P-d-6', 6, contador) + '</td>').appendTo(tr);
+                    contador++
+                     //fill in your cells with something meaningful here
+                tr.appendTo(table);
+            }
+
+            table.appendTo('body'); //Add your resulting table to the DOM, I'm using the body tag for example
+        }
 
         function crearCela(n, g, contador) {
             n = n.split('-')
@@ -49,7 +75,7 @@
             var totalText = '<svg id="cela' + contador + '" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.73 141.73" class="castell" data-toggle="modal" data-target="#m' + jointText + '"><defs><style>.' + gamma(g) + ' .cela {font-size: 40px;font-family:font72197;font-weight:700;}.celaSpecial{font-size: 1.71em;font-family:font72197;font-weight:700;}#a1{fill:#fff; font-weight:700; font-size:2.705em;}#a2{fill:#fff; font-size:1.926em;}#a3{fill:#fff; font-weight:700; font-size:2.705em;}#a4{font-family: font72197; fill:#fff; font-weight:700; font-size:1.71em;font-style: italic;}#a5{font-family: font72197; fill:#fff; font-weight:700; font-size:1.71em;font-style: italic;}#a6{font-family: font72197; fill:#fff; font-weight:700; font-size:1.71em;font-style: italic;}</style></defs><g id="nomenclatura"><rect class="' + gamma(g) + '" x="2" y="2" width="137.73" height="137.73"/>'
             totalText += text
             totalText += '</g></svg>'
-            document.write(totalText)
+            return totalText
         }
 
         function gamma(g) {
@@ -75,81 +101,64 @@
             }
             return result
         }
-
-        function crearTabla(filas, columnas) {
-            var tabla = document.createElement('table')
-            var contador = 1
-            for (var i = 0; i < columnas; i++) {
-                tabla.appendChild('<tr>')
-                for (var j = 0; j < filas; i++) {
-                    tabla.appendChild('<td>' + crearCela('P-d-6', 6, contador) + '</td>')
-                    contador++
-                }
-                tabla.appendChild('</tr>')
-            }
-        }
         crearTabla(filas, columnas)
-            //     // Obtener la referencia del elemento body
-            //     var body = document.getElementsByTagName('body')[0]
-
-        //     // Crea un elemento <table> y un elemento <tbody>
-        //     var tabla = document.createElement('table')
-        //     var tblBody = document.createElement('tbody')
-        //     var fila, columna, contador = 0
-        //         // Crea las celdas
-        //     for (var i = 1; i <= n; i++) {
-        //         for (var j = 1; j <= c; j++) {
-        //             // Crea las hileras de la tabla
-        //             fila = i
-        //             var hilera = document.createElement('tr')
-        //             $(hilera).addClass('n' + fila)
-        //             console.log(fila)
-        //             columna = j
-        //             console.log(columna)
-        //                 // Crea un elemento <td> y un nodo de texto, haz que el nodo de
-        //                 // texto sea el contenido de <td>, ubica el elemento <td> al final
-        //                 // de la hilera de la tabla
-        //             var celda = document.createElement('td')
-        //             $(celda).addClass('cord-' + fila + '-' + columna)
-        //             contador++
-        //             celdaContent = document.createElement('svg')
-        //                 // var celdaContent = document.createElement(crearCela('P-d-6', 6,contador));
-
-        //             // celdaContent.type = 'svg'
-        //             $('cord-' + fila + '-' + columna).html(function() {
-        //                 return crearCela('P-d-6', 6)
-        //             });
-        //             //$(celda).html(celdaContent)
-        //             //celda.appendChild(celdaContent)
-        //             hilera.appendChild(celda)
-        //         }
-
-        //         // agrega la hilera al final de la tabla (al final del elemento tblbody)
-        //         tblBody.appendChild(hilera)
-
-        //         // posiciona el <tbody> debajo del elemento <table>
-        //         tabla.appendChild(tblBody)
-        //     }
-        //     // appends <table> into <body>
-        //     body.appendChild(tabla)
-        //         // modifica el atributo "border" de la tabla y lo fija a "2";
-        //     tabla.setAttribute('border', '2')
-        //}
-        // $.getJSON('lib/db.json', function(data) {
-        //        var output = '<select name="castells" form="castells">'
-        //        for (var i in data.castells) {
-        //            output += '  <option value="' + data.castells[i].position.posRow + '-' + data.castells[i].position.posCol + '">' + data.castells[i].position.itpc + '-' + data.castells[i].keyName + '</option>'
-        //        }
-        //            output += '</select>'
-
-        //        document.getElementById('placeholder').innerHTML = output;
-        //    })
-
-
     }
     generaTabla(9, 22)
+        //     // Obtener la referencia del elemento body
+        //     var body = document.getElementsByTagName('body')[0]
 
+    //     // Crea un elemento <table> y un elemento <tbody>
+    //     var tabla = document.createElement('table')
+    //     var tblBody = document.createElement('tbody')
+    //     var fila, columna, contador = 0
+    //         // Crea las celdas
+    //     for (var i = 1; i <= n; i++) {
+    //         for (var j = 1; j <= c; j++) {
+    //             // Crea las hileras de la tabla
+    //             fila = i
+    //             var hilera = document.createElement('tr')
+    //             $(hilera).addClass('n' + fila)
+    //             console.log(fila)
+    //             columna = j
+    //             console.log(columna)
+    //                 // Crea un elemento <td> y un nodo de texto, haz que el nodo de
+    //                 // texto sea el contenido de <td>, ubica el elemento <td> al final
+    //                 // de la hilera de la tabla
+    //             var celda = document.createElement('td')
+    //             $(celda).addClass('cord-' + fila + '-' + columna)
+    //             contador++
+    //             celdaContent = document.createElement('svg')
+    //                 // var celdaContent = document.createElement(crearCela('P-d-6', 6,contador));
 
+    //             // celdaContent.type = 'svg'
+    //             $('cord-' + fila + '-' + columna).html(function() {
+    //                 return crearCela('P-d-6', 6)
+    //             });
+    //             //$(celda).html(celdaContent)
+    //             //celda.appendChild(celdaContent)
+    //             hilera.appendChild(celda)
+    //         }
+
+    //         // agrega la hilera al final de la tabla (al final del elemento tblbody)
+    //         tblBody.appendChild(hilera)
+
+    //         // posiciona el <tbody> debajo del elemento <table>
+    //         tabla.appendChild(tblBody)
+    //     }
+    //     // appends <table> into <body>
+    //     body.appendChild(tabla)
+    //         // modifica el atributo "border" de la tabla y lo fija a "2";
+    //     tabla.setAttribute('border', '2')
+    //}
+    // $.getJSON('lib/db.json', function(data) {
+    //        var output = '<select name="castells" form="castells">'
+    //        for (var i in data.castells) {
+    //            output += '  <option value="' + data.castells[i].position.posRow + '-' + data.castells[i].position.posCol + '">' + data.castells[i].position.itpc + '-' + data.castells[i].keyName + '</option>'
+    //        }
+    //            output += '</select>'
+
+    //        document.getElementById('placeholder').innerHTML = output;
+    //    })
     //     $.getJSON('lib/db.json', function(data) {
     //     var output = '<select name="castells" form="castells">'
     //     for (var i in data.castells) {
