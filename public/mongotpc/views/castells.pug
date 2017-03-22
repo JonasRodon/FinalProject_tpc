@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Castells
+    link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+
+  body
+    .container
+      //- form(action='/castells', method='POST')
+      //-   .form-group
+      //-     label Title
+      //-     |
+      //-     input.form-control(type='text', name='keyName', placeholder='Introdueixe un nome de Castell')
+      //-   |
+      //-   input.btn.btn-primary(type='submit', value='Submit')
+      .row
+        .col-md-12
+          h2 Listat de castells
+          ul
+            each castell in castells
+              if castell.position.itpc
+                li
+                  p keyName: #{castell.keyName}
+                  p position.itpc: #{castell.position.itpc}
+                  input(type="hidden", name="keyName", value=castell.keyName)
+                  input(type="hidden", name="url", value="/castell/" + castell.itpc)
+                  a.btn.btn-default.remove(href="/castell/" + castell.itpc) remove
+                  a.btn.btn-default.edit(data-toggle="modal", data-target="#myModal") edit
+
+      //- #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+      //-   .modal-dialog(role='document')
+      //-     form.edit-castell(action="/castell/", method='POST')
+      //-       .modal-content
+      //-         .modal-header
+      //-           button.close(type='button', data-dismiss='modal', aria-label='Close')
+      //-             span(aria-hidden='true') &times;
+      //-           h4#myModalLabel.modal-keyName Modal Castell
+      //-         .modal-body
+      //-           .form-group
+      //-             label nom
+      //-             |
+      //-             input.form-control(type='text', name='keyName')
+      //-             input(type='checkbox', name='done')
+      //-             | &nbsp;done
+      //-         .modal-footer
+      //-           button.btn.btn-default(type='button', data-dismiss='modal') Close
+      //-           |
+      //-           button.btn.btn-primary(type='submit') Save changes
+
+    script(src="/bower_components/jquery/dist/jquery.min.js")
+    script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
+    script(src="/js/main.js")
+

@@ -1,0 +1,1 @@
+mongoimport --db dbtpc --collection castells --file /home/skylab/Escriptori/FinalProject_tpc/public/tpcastellera/master/lib/db.json
