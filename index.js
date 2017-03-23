@@ -1,33 +1,31 @@
-var express = require('express')
+const express = require('express')
 var path = require('path')
-var app = express()
+const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
 
-app.set('port', (process.env.PORT || 5000))
+mongoose.Promise = global.Promise
+const PORT = process.env.PORT || 5000
+const urlDB = process.env.DB_URI || 'mongodb://localhost:27017/dbtpc'
 
-app.use(express.static(path.join(__dirname, 'public')))
+const app = express()
 
-// views is directory for all template files
-// app.set('views', __dirname + '/views')
-// app.set('view engine', 'ejs')
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
+app.set('view engine', 'pug')
+app.use(express.static('public'))
+console.log(path.join(__dirname, 'public'))
+const routerCastells = require('./routes/castells')
+const routerCastell = require('./routes/castell')
+mongoose.connect(urlDB)
 
 app.get('/', function (request, response) {
   response.redirect('/index.html')
 })
-app.get('/001', function (request, response) {
-  response.redirect('/tpcastellera/master/ficha.html')
-})
-app.get('/002', function (request, response) {
-  response.redirect('/tpcastellera/master/json.html')
-})
-app.get('/tpcastellera', function (request, response) {
-  response.redirect('/tpcastellera/master/index.html')
-})
+app.use('/castells', routerCastells)
+app.use('/castell', routerCastell)
 
-// app.get('/cool', function (request, response) {
-//   response.send(cool())
+app.listen(PORT, () => console.log(`💼 Castells Server running at PORT ${PORT}...`))
+// app.listen(app.get('port'), function () {
+//   console.log('Node app is running on port', app.get('port'))
 // })
-
-app.listen(app.get('port'), function () {
-  console.log('Node app is running on port', app.get('port'))
-})
-

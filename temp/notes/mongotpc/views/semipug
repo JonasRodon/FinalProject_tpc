@@ -1,0 +1,192 @@
+<div class="modal-body">
+    <main>
+        <input placeholder="Filtra per castell" x-webkit-speech="" autocomplete="off">
+        <header></header>
+        <section class="card">
+            <h1 contenteditable="true">Pilar de cuatre</h1>
+            <img src="/svg/fiches/#{c.keyName}.svg" width="100%">
+        </section>
+        <section class="card">
+            <h1>Denominació i catalogació del castell</h1>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">estructura</a></li>
+                <li><a data-toggle="tab" href="#menu1">pisos d’alçada</a></li>
+                <li><a data-toggle="tab" href="#menu2">tipus d’estructura</a></li>
+                <li><a data-toggle="tab" href="#menu3">tècnica de construcció</a></li>
+                <li><a data-toggle="tab" href="#menu4">gamma</a></li>
+            </ul>
+            <div class="tab-content" style="color:black;">
+                <div id="home" class="tab-pane fade in active">
+                    <h3>el pilar</h3>
+                    <p>L’estructura d’un castell és el nombre i disposició dels castellers que formen el tronc del castell. [1] Juntament amb els pisos d’alçada, l’estructura és un dels dos paràmetres bàsics per distingir els diferents tipus de castells. [2] Un pilar és un castell d’estructura simple format per una persona per pis. [3] 1. «Diccionari casteller». TERMCAT, 2007. [Consulta: 11 novembre del 2012]. 2. Almirall, Josep. «Tots els castells». A: Castells, tocant el cel amb la mà. Triangle Postals, 2011, pp.113-211 3. Brotons i Navarro, Xavier. «Els castells: conceptes bàsics». A: Castells i castellers. Gua completa del món casteller. Lynx edicions, març del 1995, pp.13-54. ISBN 84-87334-17-2</p>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h3>6</h3>
+                    <p>Els castells poden ser de 4, 5, 6, 7, 8, 9 i fins i tot 10 pisos d’alçada. [1] Juntament amb els pisos d’alçada, l’estructura és un dels dos paràmetres bàsics per distingir els diferents tipus de castells. [2] Aquí jo hi posaria tota la fila de castells de 6 1. «Tipus de castells». CCCC, 2007. [Consulta: 9 març del 2017]. 2. Almirall, Josep. «Tots els castells». A: Castells, tocant el cel amb la mà. Triangle Postals, 2011, pp.113-211</p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3>simple</h3>
+                    <p>Els castells es diferencien segons dos tipus d’estructura: les estructures simples i les estructures compostes o combinades.[1] El pilar és una estructura simple, com ho són també el dos (o torre), el tres i el quatre. [1] 1. «Diccionari casteller». TERMCAT, 2007. [Consulta: 11 novembre del 2012]..</p>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                    <h3>bàsica</h3>
+                    <p></p>
+                </div>
+                <div id="menu4" class="tab-pane fade">
+                    <h3>bàsica de vuit</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h1>Parts del castell</h1>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#menu5">pinya</a></li>
+                <li><a data-toggle="tab" href="#menu6">tronc</a></li>
+                <li><a data-toggle="tab" href="#menu7">pom de dalt</a></li>
+                <li><a data-toggle="tab" href="#menu8">folre</a></li>
+                <li><a data-toggle="tab" href="#menu9">manilles</a></li>
+            </ul>
+            <div class="tab-content" style="color:black;">
+                <div id="menu5" class="tab-pane fade in active">
+                    <h3>49 castellers</h3>
+                    <p></p>
+                </div>
+                <div id="menu6" class="tab-pane fade">
+                    <h3>4 castellers</h3>
+                    <p></p>
+                </div>
+                <div id="menu7" class="tab-pane fade">
+                    <h3>1 casteller</h3>
+                    <p></p>
+                </div>
+                <div id="menu8" class="tab-pane fade">
+                    <h3>sense</h3>
+                    <p></p>
+                </div>
+                <div id="menu9" class="tab-pane fade">
+                    <h3>sense</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h1>Taula de puntuacions del Concurs de Castells 2016</h1>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#menu10">punts carregat</a></li>
+                <li><a data-toggle="tab" href="#menu11">punts descarregat</a></li>
+                <li><a data-toggle="tab" href="#menu12">grup</a></li>
+                <li><a data-toggle="tab" href="#menu13">subgrup</a></li>
+            </ul>
+            <div class="tab-content" style="color:black;">
+                <div id="menu10" class="tab-pane fade in active">
+                    <h3>269</h3>
+                    <p></p>
+                </div>
+                <div id="menu11" class="tab-pane fade">
+                    <h3>318</h3>
+                    <p></p>
+                </div>
+                <div id="menu12" class="tab-pane fade">
+                    <h3>grup 3</h3>
+                    <p></p>
+                </div>
+                <div id="menu13" class="tab-pane fade">
+                    <h3>sub 2</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h1>Estadística</h1>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#menu14">núm. de colles que han descarregat</a></li>
+                <li><a data-toggle="tab" href="#menu15">núm. de colles que l’han carregat</a></li>
+                <li><a data-toggle="tab" href="#menu16">núm. de colles que l’han intentat</a></li>
+            </ul>
+            <div class="tab-content" style="color:black;">
+                <div id="menu14" class="tab-pane fade in active">
+                    <h3>19</h3>
+                    <p></p>
+                </div>
+                <div id="menu15" class="tab-pane fade">
+                    <h3>5</h3>
+                    <p></p>
+                </div>
+                <div id="menu16" class="tab-pane fade">
+                    <h3>6</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h1>Història “antiga”</h1>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#menu17">Any de consecució absolut del castell carregat</a></li>
+                <li><a data-toggle="tab" href="#menu18">Colla pionera en assolir el castell carregat</a></li>
+                <li><a data-toggle="tab" href="#menu19">Any de consecució absolut del castell descarregat</a></li>
+                <li><a data-toggle="tab" href="#menu20">Colla pionera en assolir el castell descarregat</a></li>
+            </ul>
+            <div class="tab-content" style="color:black;">
+                <div id="menu17" class="tab-pane fade in active">
+                    <h3>1890</h3>
+                    <p></p>
+                </div>
+                <div id="menu18" class="tab-pane fade">
+                    <h3>desconegut</h3>
+                    <p></p>
+                </div>
+                <div id="menu19" class="tab-pane fade">
+                    <h3>1890</h3>
+                    <p></p>
+                </div>
+                <div id="menu20" class="tab-pane fade">
+                    <h3>desconegut</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h1>Història “recent”</h1>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#menu21">Any de consecució absolut del castell carregat</a></li>
+                <li><a data-toggle="tab" href="#menu22">Colla pionera en assolir el castell carregat</a></li>
+                <li><a data-toggle="tab" href="#menu23">Any de consecució absolut del castell descarregat</a></li>
+                <li><a data-toggle="tab" href="#menu24">Colla pionera en assolir el castell descarregat</a></li>
+            </ul>
+            <div class="tab-content" style="color:black;">
+                <div id="menu21" class="tab-pane fade in active">
+                    <h3>1967</h3>
+                    <p></p>
+                </div>
+                <div id="menu22" class="tab-pane fade">
+                    <h3>Nens del Vendrell</h3>
+                    <p></p>
+                </div>
+                <div id="menu23" class="tab-pane fade">
+                    <h3>1969</h3>
+                    <p></p>
+                </div>
+                <div id="menu24" class="tab-pane fade">
+                    <h3>Nens del Vendrell</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <ul class="imgSlider">
+                <li><img width="400px" src="imgs/P6_CdB_barceloneta2014.jpg"></li>
+            </ul>
+        </section>
+        <section class="card">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250px" height="250px">
+                <g id="qrcode" />
+        </section>
+    </main>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
