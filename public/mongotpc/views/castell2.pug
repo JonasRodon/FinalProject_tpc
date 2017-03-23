@@ -1,0 +1,91 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Castells
+    link(rel="stylesheet", href="/bower-components/bootstrap/dist/css/bootstrap.min.css")
+
+  body
+    .container
+      //- form(action='/castells', method='POST')
+      //-   .form-group
+      //-     label Title
+      //-     |
+      //-     input.form-control(type='text', name='keyName', placeholder='Introdueixe un nome de Castell')
+      //-   |
+      //-   input.btn.btn-primary(type='submit', value='Submit')
+      .row
+        .col-md-12
+          h2 Listat de castells
+          each c in castell
+            ul
+              li
+                p keyName #{c.keyName}
+                p itpc #{c.position.itpc}
+                p gitpc #{c.position.gitpc}
+                p posCol #{c.position.posCol}
+                p posRow #{c.position.posRow}
+                p gposCol #{c.position.gposCol}
+                p gposRow #{c.position.gposRow}
+                p name #{c.details.name}
+                p esName #{c.details.esName}
+                p tumbNailSrc #{c.details.tumbNailSrc}
+                p esDescription #{c.details.esDescription}
+                p esType #{c.details.esType}
+                p consTec #{c.details.consTec}
+                p gamma #{c.details.gamma}
+                p pinya #{c.parts.pinya}
+                p tronc #{c.parts.tronc}
+                p pom #{c.parts.pom}
+                p folre #{c.parts.folre}
+                p manilles #{c.parts.manilles}
+                p Pointscar #{c.score.Pointscar}
+                p Pointsdes #{c.score.Pointsdes}
+                p group #{c.score.group}
+                p subGroup #{c.score.subGroup}
+                p numCollDes #{c.metrics.numCollDes}
+                p firstCollCar #{c.metrics.firstCollCar}
+                p numCollIn #{c.metrics.numCollIn}
+                p hOld yearCasCar #{c.hOld.yearCasCar}
+                p hOld firstCollCar #{c.hOld.firstCollCar}
+                p hOld yearCasDes #{c.hOld.yearCasDes}
+                p hOld firstCollDes #{c.hOld.firstCollDes}
+                p hNew yearCasCar #{c.hNew.yearCasCar}
+                p hNew firstCollCar #{c.hNew.firstCollCar}
+                p hNew yearCasDes #{c.hNew.yearCasDes}
+                p hNew firstCollDes #{c.hNew.firstCollDes}
+                p imgScr number #{c.imgScr.number}
+                p imgScr name #{c.imgScr.name}
+                p imgScr src #{c.imgScr.src}
+                p vidScr number #{c.vidScr.number}
+                p vidScr name #{c.vidScr.name}
+                p vidScr src #{c.vidScr.src} 
+              //- input(type="hidden", name="keyName", value=castell.keyName)
+              //- input(type="hidden", name="url", value="/castell/" + castell.itpc)
+              //- a.btn.btn-default.remove(href="/castell/" + castell.itpc) remove
+              //- a.btn.btn-default.edit(data-toggle="modal", data-target="#myModal") edit
+
+      //- #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+      //-   .modal-dialog(role='document')
+      //-     form.edit-castell(action="/castell/", method='POST')
+      //-       .modal-content
+      //-         .modal-header
+      //-           button.close(type='button', data-dismiss='modal', aria-label='Close')
+      //-             span(aria-hidden='true') &times;
+      //-           h4#myModalLabel.modal-keyName Modal Castell
+      //-         .modal-body
+      //-           .form-group
+      //-             label nom
+      //-             |
+      //-             input.form-control(type='text', name='keyName')
+      //-             input(type='checkbox', name='done')
+      //-             | &nbsp;done
+      //-         .modal-footer
+      //-           button.btn.btn-default(type='button', data-dismiss='modal') Close
+      //-           |
+      //-           button.btn.btn-primary(type='submit') Save changes
+
+    script(src="/bower-components/jquery/dist/jquery.min.js")
+    script(src="/bower-components/bootstrap/dist/css/bootstrap.min.css")
+    script(src="/js/main.js")
+

@@ -1,21 +1,26 @@
 {
-  "name": "tasks-manager",
-  "description": "",
-  "main": "index.js",
-  "authors": [
-    "JuanMa Garrido <JuanMa.Garrido@gmail.com>"
-  ],
-  "license": "MIT",
-  "homepage": "",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "public/bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "^3.3.7"
-  }
+    "name": "tasks-manager",
+    "description": "",
+    "main": "index.js",
+    "authors": [
+        "JuanMa Garrido <JuanMa.Garrido@gmail.com>"
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "public/bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "^3.3.7",
+        "font-awesome": "font-awsome#^4.7.0",
+        "bxslider-4": "bxSlider#v4.2.4",
+        "iscroll": "^5.2.0",
+        "requirejs": "^2.3.3"
+
+    }
 }

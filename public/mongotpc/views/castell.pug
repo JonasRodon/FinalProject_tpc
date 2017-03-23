@@ -1,52 +1,375 @@
 doctype html
-html(lang='en')
+html
   head
     meta(charset='UTF-8')
-    title Castells
-    link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
-
-  body
-    .container
-      //- form(action='/castells', method='POST')
-      //-   .form-group
-      //-     label Title
-      //-     |
-      //-     input.form-control(type='text', name='keyName', placeholder='Introdueixe un nome de Castell')
-      //-   |
-      //-   input.btn.btn-primary(type='submit', value='Submit')
-      .row
-        .col-md-12
-          h2 Listat de castells
-          ul
-            li
-              p Nom: #{castell.keyName}
-              p Index Tpc: #{castell.position.itpc}
-              input(type="hidden", name="keyName", value=castell.keyName)
-              input(type="hidden", name="url", value="/castell/" + castell.itpc)
-              a.btn.btn-default.remove(href="/castell/" + castell.position.itpc) remove
-              a.btn.btn-default.edit(data-toggle="modal", data-target="#myModal") edit
-
-      //- #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
-      //-   .modal-dialog(role='document')
-      //-     form.edit-castell(action="/castell/", method='POST')
-      //-       .modal-content
-      //-         .modal-header
-      //-           button.close(type='button', data-dismiss='modal', aria-label='Close')
-      //-             span(aria-hidden='true') &times;
-      //-           h4#myModalLabel.modal-keyName Modal Castell
-      //-         .modal-body
-      //-           .form-group
-      //-             label nom
-      //-             |
-      //-             input.form-control(type='text', name='keyName')
-      //-             input(type='checkbox', name='done')
-      //-             | &nbsp;done
-      //-         .modal-footer
-      //-           button.btn.btn-default(type='button', data-dismiss='modal') Close
-      //-           |
-      //-           button.btn.btn-primary(type='submit') Save changes
-
-    script(src="/bower_components/jquery/dist/jquery.min.js")
-    script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
-    script(src="/js/main.js")
-
+    title Taula preriòdica Castellera
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0')
+    link(rel='stylesheet', href='./bower_components/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='./bower_components/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='./bower_components/bxslider-4/dist/jquery.bxslider.min.css')
+    link(rel='stylesheet', href='./css/styles.css')
+  body(onload='loaded()')
+    #wrapper
+      #scroller
+        .container2
+          // Modal
+          #mPd4.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+            .modal-dialog(role='document')
+              each c in castell
+                  .modal-content
+                  .modal-header
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                      span(aria-hidden='true') ×
+                    h4#myModalLabel.modal-title Modal title
+                  .modal-body
+                    main
+                      header
+                        h1(contenteditable='true') #{c.details.name}
+                      section.card
+                        svg(id='#{c.keyName}', data-name='#{c.keyName}', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', viewbox='0 0 141.73 141.73')
+                          defs
+                            style.
+                              @import url(https://www.fontify.me/wf/8652fdc67e59013a6b1788b44c690e4f);
+                              @import url(https://www.fontify.me/wf/72b7a2c87ee96cb3986195037f38dd01);
+                              .cls-1,
+                              .cls-11,
+                              .cls-16,
+                              .cls-18,
+                              .cls-23,
+                              .cls-4,
+                              .cls-5,
+                              .cls-6,
+                              .cls-7 {
+                              fill: #fff;
+                              font-family: 'font72197';
+                              }
+                              .cls-14,
+                              .cls-15,
+                              .cls-2,
+                              .cls-20 {
+                              fill: none;
+                              }
+                              .cls-2,
+                              .cls-20,
+                              .cls-23 {
+                              stroke: #fff;
+                              }
+                              .cls-2,
+                              .cls-23 {
+                              stroke-miterlimit: 10;
+                              stroke-width: 0.25px;
+                              }
+                              .cls-4,
+                              .cls-6 {
+                              font-size: 43px;
+                              }
+                              .cls-10,
+                              .cls-11,
+                              .cls-16,
+                              .cls-18,
+                              .cls-4,
+                              .cls-5,
+                              .cls-6,
+                              .cls-7,
+                              .cls-9 {
+                              font-family: 'font72197';
+                              }
+                              .cls-10,
+                              .cls-13,
+                              .cls-17,
+                              .cls-18,
+                              .cls-4,
+                              .cls-5,
+                              .cls-6 {
+                              font-weight: 700;
+                              }
+                              .cls-4 {
+                              letter-spacing: -1px;
+                              }
+                              .cls-5 {
+                              font-size: 30.62px;
+                              }
+                              .cls-7 {
+                              font-size: 6.79px;
+                              }
+                              .cls-12,
+                              .cls-8,
+                              .cls-9 {
+                              fill: #ffd8a0;
+                              }
+                              .cls-9 {
+                              font-size: 3.28px;
+                              }
+                              .cls-10 {
+                              font-size: 2.2px;
+                              }
+                              .cls-11 {
+                              font-size: 7.25px;
+                              }
+                              .cls-12 {
+                              font-size: 3.77px;
+                              }
+                              .cls-13 {
+                              font-size: 8.23px;
+                              fill: #ffd597;
+                              font-family: 'font50939';
+                              font-style: italic;
+                              }
+                              .cls-14,
+                              .cls-15 {
+                              stroke: #ffd89f;
+                              }
+                              .cls-14,
+                              .cls-15,
+                              .cls-20 {
+                              stroke-linejoin: round;
+                              }
+                              .cls-15,
+                              .cls-20 {
+                              stroke-linecap: round;
+                              }
+                              .cls-16,
+                              .cls-18 {
+                              font-size: 7.42px;
+                              }
+                              .cls-19 {
+                              clip-path: url(#clip-path);
+                              }
+                              .cls-20 {
+                              stroke-width: 0.75px;
+                              }
+                              .cls-21 {
+                              clip-path: url(#clip-path-2);
+                              }
+                              .cls-22 {
+                              clip-path: url(#clip-path-3);
+                              }
+                              .cls-10, .cls-3{
+                                fill: #{c.details.gamma};
+                              }
+                            clippath#clip-path(transform='translate(0 0)')
+                              path.cls-1(d='M15.92,111v-7.77H14.19v-1.79h-2.1v1.79H10.36V111H8.3v2.49H18V111H15.92Zm-3.28-5.67h1V111h-1v-5.67Z')
+                            clippath#clip-path-2(transform='translate(0 0)')
+                              path.cls-1(d='M16.35,132.11V123.9H14.52V122H12.31v1.89H10.48v8.22H8.3v2.63H18.53v-2.63H16.35Zm-3.46-6h1.05v6H12.89v-6Z')
+                            clippath#clip-path-3(transform='translate(0 0)')
+                              path.cls-2(d='M131.21,131.77v-8h-1.78v-1.84h-2.16v1.84h-1.78v8h-2.12v2.56h10v-2.56h-2.13Zm-3.37-5.84h1v5.84h-1v-5.84Z')
+                          title #{c.keyName}
+                          rect.cls-3(x='2', y='2', width='137.73', height='137.73' fill= '#{c.details.gamma}')
+                          path.cls-1(d='M137.73,4V137.73H4V4H137.73m4-4H0V141.73H141.73V0h0Z', transform='translate(0 0)')
+                          text.cls-4(transform='translate(34.59 67.83)') P
+                          text.cls-5(transform='translate(60.12 67.83) scale(0.91 1)') d
+                          text.cls-6(transform='translate(79.51 67.83)') 6
+                          text.cls-7(transform='translate(118.35 12.66)') 54
+                          circle.cls-8(cx='130.37', cy='7.51', r='0.68')
+                          path.cls-8(d='M131.5,10.38a0.43,0.43,0,0,1-.43.43h-1.39a0.43,0.43,0,0,1-.43-0.43V8.81a0.43,0.43,0,0,1,.43-0.43h1.39a0.43,0.43,0,0,1,.43.43v1.57h0Z', transform='translate(0 0)')
+                          path.cls-8(d='M131,13.11a0.33,0.33,0,0,1-.33.33h-0.51a0.34,0.34,0,0,1-.34-0.33V10.84a0.34,0.34,0,0,1,.34-0.34h0.51a0.34,0.34,0,0,1,.33.34v2.27Z', transform='translate(0 0)')
+                          text.cls-7(transform='translate(116.75 21.07)') 7,4
+                          path.cls-8(d='M131,16.8a0.4,0.4,0,0,0,.26.09,0.41,0.41,0,0,0,.32-0.15,0.42,0.42,0,0,0-.06-0.59l-1-.82a0.41,0.41,0,0,0-.51,0l-1,.82a0.42,0.42,0,0,0-.06.59,0.41,0.41,0,0,0,.58.06l0.36-.29V21l-0.36-.29a0.41,0.41,0,1,0-.52.64l1,0.83a0.41,0.41,0,0,0,.51,0l1-.83a0.41,0.41,0,0,0-.52-0.64l-0.36.29V16.51Z', transform='translate(0 0)')
+                          text.cls-9(transform='translate(131.93 19.67)') m
+                          text.cls-7(transform='translate(122.6 29.48)') 4
+                          path.cls-8(d='M132.91,29l-0.6-2.5a0.16,0.16,0,0,0-.14-0.12h-1a1.13,1.13,0,0,0,.26-0.73,1,1,0,0,0-1-1,1.05,1.05,0,0,0-1,1.06,1.09,1.09,0,0,0,.26.71h-1a0.17,0.17,0,0,0-.14.11L127.84,29a0.16,0.16,0,0,0,0,.13,0.14,0.14,0,0,0,.1.07h4.83a0.17,0.17,0,0,0,.1-0.08A0.21,0.21,0,0,0,132.91,29Zm-2.54-3.91a0.52,0.52,0,1,1-.51.51A0.51,0.51,0,0,1,130.37,25.09Z', transform='translate(0 0)')
+                          text.cls-10(transform='translate(129.83 28.62)') T
+                          text.cls-11(transform='translate(8.3 12.91)')
+                            | #{c.score.Pointscar}/#{c.score.Pointsdes}
+                            tspan.cls-12(x='32.54', y='-0.94') pts
+                          text
+                            text.cls-13(transform='translate(54.4 82.64)')
+                              | #{c.details.name}
+                              tspan(x='-5.08', y='7.99') #{c.details.esName}
+                            line.cls-14(x1='3.99', y1='116.17', x2='137.73', y2='116.17')
+                            line.cls-15(x1='70.87', y1='99.61', x2='70.87', y2='132.73')
+                            text.cls-16(transform='translate(83.41 110.53)')
+                              tspan.cls-17 233 
+                              tspan(x='14.86', y='0') 20
+                            text.cls-16(transform='translate(106.14 108.06) scale(0.58 0.58)') %
+                            text.cls-16(transform='translate(83.41 128.85)')
+                              tspan.cls-17 26 
+                              tspan(x='10.57', y='0') 2
+                            text.cls-16(transform='translate(97.9 126.38) scale(0.58 0.58)') %
+                            text.cls-16(transform='translate(33.84 110.53)') 59
+                            text.cls-16(transform='translate(41.77 108.06) scale(0.58 0.58)') % 
+                            text.cls-18(transform='translate(45.96 110.53)') 640
+                            text.cls-16(transform='translate(33.79 128.85)') 19
+                            text.cls-16(transform='translate(41.72 126.38) scale(0.58 0.58)') % 
+                            text.cls-18(transform='translate(45.91 128.85)') 203
+                            path.cls-1(d='M15.92,111v-7.77H14.19v-1.79h-2.1v1.79H10.36V111H8.3v2.49H18V111H15.92Zm-3.28-5.67h1V111h-1v-5.67Z', transform='translate(0 0)')
+                            g.cls-19
+                              rect.cls-1(x='8.3', y='106.2', width='9.68', height='12.05')
+                            polyline.cls-20(points='8.3 109.67 8.3 99.57 17.98 99.57 17.98 106.09')
+                            polygon.cls-1(points='16.86 105.76 17.98 107.7 19.1 105.76 16.86 105.76')
+                            path.cls-1(d='M16.35,132.11V123.9H14.52V122H12.31v1.89H10.48v8.22H8.3v2.63H18.53v-2.63H16.35Zm-3.46-6h1.05v6H12.89v-6Z', transform='translate(0 0)')
+                            g.cls-21
+                              rect.cls-1(x='8.3', y='127.06', width='10.24', height='12.73')
+                            polyline.cls-20(points='8.3 130.86 8.3 120.18 11.58 120.18')
+                            polygon.cls-1(points='11.25 121.3 13.19 120.18 11.25 119.06 11.25 121.3')
+                            polygon.cls-2(points='129.23 105.6 130.24 105.6 130.24 107.5 132.55 107.92 132.55 103.47 130.8 103.47 130.8 101.65 128.67 101.65 128.67 103.47 126.92 103.47 126.92 106.89 129.23 107.31 129.23 105.6')
+                            polygon.cls-1(points='131.27 107.55 128.96 107.13 128.96 110.98 127.95 110.98 127.95 106.94 125.64 106.52 125.64 110.98 123.54 110.98 123.54 113.5 133.37 113.5 133.37 110.98 131.27 110.98 131.27 107.55')
+                            polyline.cls-20(points='123.29 131.1 123.29 127.54 133.26 127.54 133.26 130.32')
+                            polygon.cls-1(points='132.33 130.05 133.26 131.66 134.2 130.05 132.33 130.05')
+                            g.cls-22
+                              polygon.cls-23(points='133.33 139.25 123.36 139.25 123.36 126.85 133.33 126.86 133.33 139.25')
+                            path.cls-2(d='M131.21,131.77v-8h-1.78v-1.84h-2.16v1.84h-1.78v8h-2.12v2.56h10v-2.56h-2.13Zm-3.37-5.84h1v5.84h-1v-5.84Z', transform='translate(0 0)')
+                      section.card
+                        h1 Denominació i catalogació del castell
+                        ul.nav.nav-tabs
+                          li.active
+                            a(data-toggle='tab', href='#home') estructura
+                          li
+                            a(data-toggle='tab', href='#menu1') pisos d’alçada
+                          li
+                            a(data-toggle='tab', href='#menu2') tipus d’estructura
+                          li
+                            a(data-toggle='tab', href='#menu3') tècnica de construcció
+                          li
+                            a(data-toggle='tab', href='#menu4') gamma
+                        .tab-content(style='color:black;')
+                          #home.tab-pane.fade.in.active
+                            h3 #{c.details.esName}
+                            p #{c.details.esDescription}
+                          #menu1.tab-pane.fade
+                            h3 #{c.details.height}
+                            p #{c.details.esHeightDescription}
+                          #menu2.tab-pane.fade
+                            h3 #{c.details.esType}
+                            p #{c.details.esTypeDescription}
+                          #menu3.tab-pane.fade
+                            h3 #{c.details.consTec}
+                            p
+                          #menu4.tab-pane.fade
+                            h3 #{c.details.gamma}
+                            p
+                      section.card
+                        h1 Parts del castell
+                        ul.nav.nav-tabs
+                          li.active
+                            a(data-toggle='tab', href='#menu5') pinya
+                          li
+                            a(data-toggle='tab', href='#menu6') tronc
+                          li
+                            a(data-toggle='tab', href='#menu7') pom de dalt
+                          li
+                            a(data-toggle='tab', href='#menu8') folre
+                          li
+                            a(data-toggle='tab', href='#menu9') manilles
+                        .tab-content(style='color:black;')
+                          #menu5.tab-pane.fade.in.active
+                            h3
+                              | #{c.parts.pinya} 
+                            p
+                          #menu6.tab-pane.fade
+                            h3
+                              | #{c.parts.tronc} 
+                            p
+                          #menu7.tab-pane.fade
+                            h3
+                              | #{c.parts.pom} 
+                            p
+                          #menu8.tab-pane.fade
+                            h3
+                              | #{c.parts.folre} 
+                            p
+                          #menu9.tab-pane.fade
+                            h3
+                              | #{c.parts.manilles} 
+                            p
+                      section.card
+                        h1 Taula de puntuacions del Concurs de Castells 2016
+                        ul.nav.nav-tabs
+                          li.active
+                            a(data-toggle='tab', href='#menu10') punts carregat
+                          li
+                            a(data-toggle='tab', href='#menu11') punts descarregat
+                          li
+                            a(data-toggle='tab', href='#menu12') grup
+                          li
+                            a(data-toggle='tab', href='#menu13') subgrup
+                        .tab-content(style='color:black;')
+                          #menu10.tab-pane.fade.in.active
+                            h3 #{c.score.Pointscar}
+                            p
+                          #menu11.tab-pane.fade
+                            h3 #{c.score.Pointsdes}
+                            p
+                          #menu12.tab-pane.fade
+                            h3 #{c.score.group}
+                            p
+                          #menu13.tab-pane.fade
+                            h3 #{c.score.subGroup}
+                            p
+                      section.card
+                        h1 Estadística
+                        ul.nav.nav-tabs
+                          li.active
+                            a(data-toggle='tab', href='#menu14') núm. de colles que han descarregat
+                          li
+                            a(data-toggle='tab', href='#menu15') núm. de colles que l’han carregat
+                          li
+                            a(data-toggle='tab', href='#menu16') núm. de colles que l’han intentat
+                        .tab-content(style='color:black;')
+                          #menu14.tab-pane.fade.in.active
+                            h3 #{c.metrics.numCollDes}
+                            p
+                          #menu15.tab-pane.fade
+                            h3 #{c.metrics.firstCollCar}
+                            p
+                          #menu16.tab-pane.fade
+                            h3 #{c.metrics.numCollDes}
+                            p
+                      section.card
+                        h1 Història “antiga”
+                        ul.nav.nav-tabs
+                          li.active
+                            a(data-toggle='tab', href='#menu17') Any de consecució absolut del castell carregat
+                          li
+                            a(data-toggle='tab', href='#menu18') Colla pionera en assolir el castell carregat
+                          li
+                            a(data-toggle='tab', href='#menu19') Any de consecució absolut del castell descarregat
+                          li
+                            a(data-toggle='tab', href='#menu20') Colla pionera en assolir el castell descarregat
+                        .tab-content(style='color:black;')
+                          #menu17.tab-pane.fade.in.active
+                            h3 #{c.hOld.yearCasCar}
+                            p
+                          #menu18.tab-pane.fade
+                            h3 #{c.hOld.firstCollCar}
+                            p
+                          #menu19.tab-pane.fade
+                            h3 #{c.hOld.yearCasDes}
+                            p
+                          #menu20.tab-pane.fade
+                            h3 #{c.hOld.firstCollDes}
+                            p
+                      section.card
+                        h1 Història “recent”
+                        ul.nav.nav-tabs
+                          li.active
+                            a(data-toggle='tab', href='#menu21') Any de consecució absolut del castell carregat
+                          li
+                            a(data-toggle='tab', href='#menu22') Colla pionera en assolir el castell carregat
+                          li
+                            a(data-toggle='tab', href='#menu23') Any de consecució absolut del castell descarregat
+                          li
+                            a(data-toggle='tab', href='#menu24') Colla pionera en assolir el castell descarregat
+                        .tab-content(style='color:black;')
+                          #menu21.tab-pane.fade.in.active
+                            h3 #{c.hNew.yearCasCar}
+                            p
+                          #menu22.tab-pane.fade
+                            h3 #{c.hNew.firstCollCar}
+                            p
+                          #menu23.tab-pane.fade
+                            h3 #{c.hNew.firstCollDes}
+                            p
+                          #menu24.tab-pane.fade
+                            h3 #{c.hNew.firstCollDes}
+                            p
+                      section.card
+                        ul.imgSlider
+                          li
+                            img(id='#{c.imgScr.number}', width='400px ', src='#{c.imgScr.src} ', alt='#{c.imgScr.name} ')
+                        ul.vigSlider
+                          li
+                            img(id='#{c.vidScr.number} ', width='400px', src='#{c.imgScr.src}', alt='#{c.vidScr.name}')
+                      section.card
+                        svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='250px', height='250px')
+                          g#qrcode
