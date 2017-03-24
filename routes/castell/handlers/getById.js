@@ -4,7 +4,7 @@ module.exports = (req, res) => {
         // Castell.find({'position.itpc': {$eq: itpc}})
         //   .then(castell => res.render('castell', { castell }))
         //   .catch(err => { throw err })
-        
+
     Castell.find({ 'position.itpc': itpc })
         .then(castell => {
             //console.log(castell[0].keyName)
