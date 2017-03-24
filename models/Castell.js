@@ -4,12 +4,12 @@ const collection = 'castells'
 const TaskSchema = new mongoose.Schema({
   'keyName': { type: 'String' },
   'position': {
-    'itpc': { type: 'Number' },
-    'gitpc': { type: 'Number' },
-    'posCol': { type: 'Number' },
-    'posRow': { type: 'Number' },
-    'gposCol': { type: 'Number' },
-    'gposRow': { type: 'Number' }
+    'itpc': { type: 'String' },
+    'gitpc': { type: 'String' },
+    'posCol': { type: 'String' },
+    'posRow': { type: 'String' },
+    'gposCol': { type: 'String' },
+    'gposRow': { type: 'String' }
   },
   'details': {
     'name': { type: 'String' },
@@ -21,42 +21,42 @@ const TaskSchema = new mongoose.Schema({
     'gamma': { type: 'String' }
   },
   'parts': {
-    'pinya': { type: 'Number' },
-    'tronc': { type: 'Number' },
-    'pom': { type: 'Number' },
-    'folre': { type: 'Number' },
-    'manilles': { type: 'Number' }
+    'pinya': { type: 'String' },
+    'tronc': { type: 'String' },
+    'pom': { type: 'String' },
+    'folre': { type: 'String' },
+    'manilles': { type: 'String' }
   },
   'score': {
-    'Pointscar': { type: 'Number' },
-    'Pointsdes': { type: 'Number' },
+    'Pointscar': { type: 'String' },
+    'Pointsdes': { type: 'String' },
     'group': { type: 'String' },
     'subGroup': { type: 'String' }
   },
   'metrics': {
-    'numCollDes': { type: 'Number' },
+    'numCollDes': { type: 'String' },
     'firstCollCar': { type: 'String' },
-    'numCollIn': { type: 'Number' }
+    'numCollIn': { type: 'String' }
   },
   'hOld': {
-    'yearCasCar': { type: 'Number' },
-    'firstCollCar': { type: 'Number' },
-    'yearCasDes': { type: 'Number' },
-    'firstCollDes': { type: 'Number' }
+    'yearCasCar': { type: 'String' },
+    'firstCollCar': { type: 'String' },
+    'yearCasDes': { type: 'String' },
+    'firstCollDes': { type: 'String' }
   },
   'hNew': {
-    'yearCasCar': { type: 'Number' },
-    'firstCollCar': { type: 'Number' },
-    'yearCasDes': { type: 'Number' },
-    'firstCollDes': { type: 'Number' }
+    'yearCasCar': { type: 'String' },
+    'firstCollCar': { type: 'String' },
+    'yearCasDes': { type: 'String' },
+    'firstCollDes': { type: 'String' }
   },
   'imgScr': {
-    'number': { type: 'Number' },
+    'number': { type: 'String' },
     'name': { type: 'String' },
     'src': { type: 'String' }
   },
   'vidScr': {
-    'number': { type: 'Number' },
+    'number': { type: 'String' },
     'name': { type: 'String' },
     'src': { type: 'String' }
   }
