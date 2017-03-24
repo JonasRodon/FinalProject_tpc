@@ -48,22 +48,22 @@ function tgamma (g) {
   var result
   switch (g) {
     case '6':
-      result = '#008EB0'
+      result = 'De6'
       break
     case '7':
-      result = '#4CBB7D'
+      result = 'De7'
       break
     case '8':
-      result = '#FCB033'
+      result = 'De8'
       break
     case '9':
-      result = '#F15D4D'
+      result = 'De9'
       break
     case 'extra':
-      result = '#AD8EC3'
+      result = 'DeEx'
       break
     default:
-      result = '#FFFFFF'
+      result = 'DeDef'
       break
   }
   return result
