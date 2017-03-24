@@ -9603,8 +9603,8 @@
   {
     "keyName": "3d8",
     "position": {
-      "itpc": 20,
-      "gitpc": 46,
+      "itpc": "20",
+      "gitpc": "46",
       "posCol": "5",
       "posRow": "5",
       "gposCol": "",
@@ -9627,8 +9627,8 @@
       "manilles": ""
     },
     "score": {
-      "Pointscar": 445,
-      "Pointsdes": 510,
+      "Pointscar": "445",
+      "Pointsdes": "510",
       "group": "",
       "subGroup": ""
     },
@@ -9843,8 +9843,8 @@
   {
     "keyName": "3d9f",
     "position": {
-      "itpc": 21,
-      "gitpc": 47,
+      "itpc": "21",
+      "gitpc": "47",
       "posCol": "5",
       "posRow": "7",
       "gposCol": "",
@@ -9867,8 +9867,8 @@
       "manilles": ""
     },
     "score": {
-      "Pointscar": 965,
-      "Pointsdes": 1110,
+      "Pointscar": "965",
+      "Pointsdes": "1110",
       "group": "",
       "subGroup": ""
     },
@@ -10143,8 +10143,8 @@
   {
     "keyName": "3d10fm",
     "position": {
-      "itpc": 23,
-      "gitpc": 49,
+      "itpc": "23",
+      "gitpc": "49",
       "posCol": "5",
       "posRow": "9",
       "gposCol": "",
@@ -10167,8 +10167,8 @@
       "manilles": ""
     },
     "score": {
-      "Pointscar": 2105,
-      "Pointsdes": 2420,
+      "Pointscar": "2105",
+      "Pointsdes": "2420",
       "group": "",
       "subGroup": ""
     },
@@ -12303,8 +12303,8 @@
   {
     "keyName": "3d6a",
     "position": {
-      "itpc": 24,
-      "gitpc": 54,
+      "itpc": "24",
+      "gitpc": "54",
       "posCol": "6",
       "posRow": "3",
       "gposCol": "",
@@ -12483,8 +12483,8 @@
   {
     "keyName": "3d7a",
     "position": {
-      "itpc": 25,
-      "gitpc": 56,
+      "itpc": "25",
+      "gitpc": "56",
       "posCol": "6",
       "posRow": "4",
       "gposCol": "",
@@ -12507,8 +12507,8 @@
       "manilles": ""
     },
     "score": {
-      "Pointscar": 240,
-      "Pointsdes": 265,
+      "Pointscar": "240",
+      "Pointsdes": "265",
       "group": "",
       "subGroup": ""
     },

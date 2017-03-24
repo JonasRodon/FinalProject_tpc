@@ -1,0 +1,8 @@
+mongoimport -h ds139430.mlab.com:39430 -d dbtpc -c castells -u JonasRodon -p jr1212tr12  --file update.json
+
+
+--authenticationDatabase %AUTH_DB% 
+
+mongo ds139430.mlab.com:39430/dbtpc -u JonasRodon -p jr1212tr12
+
+mongodb://JonasRodon:jr1212tr12@ds139430.mlab.com:39430/dbtpc
