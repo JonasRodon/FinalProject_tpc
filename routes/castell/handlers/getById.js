@@ -47,16 +47,16 @@ function tgamma (g) {
   console.log(g)
   var result
   switch (g) {
-    case '6':
+    case 6:
       result = 'De6'
       break
-    case '7':
+    case 7:
       result = 'De7'
       break
-    case '8':
+    case 8:
       result = 'De8'
       break
-    case '9':
+    case 9:
       result = 'De9'
       break
     case 'extra':
