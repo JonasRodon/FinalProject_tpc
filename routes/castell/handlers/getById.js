@@ -6,11 +6,11 @@ module.exports = (req, res) => {
         //   .catch(err => { throw err })
 
     Castell.find({ 'position.itpc': itpc })
-        .then(castell => {
-            //console.log(castell[0].keyName)
-            castell[0].keyName = ajustingText(castell[0].keyName)
-            return castell
-        })
+        // .then(castell => {
+        //     //console.log(castell[0].keyName)
+        //     castell[0].keyName = ajustingText(castell[0].keyName)
+        //     return castell
+        // })
         .then(castell => {
             //console.log(castell[0].details)
             castell[0].details.gamma = tgamma(castell[0].details.gamma)
