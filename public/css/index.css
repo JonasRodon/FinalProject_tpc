@@ -191,7 +191,7 @@ a:focus {
 @media (min-width: 48em) {
     .responsive-table tbody tr {
         display: table-row;
-        border-width: 1px;
+        /*border-width: 1px;*/
     }
 }
 
@@ -201,7 +201,7 @@ a:focus {
 
 @media (min-width: 48em) {
     .responsive-table tbody tr:nth-of-type(even) {
-        background-color: rgba(94, 93, 82, 0.1);
+        /*background-color: rgba(94, 93, 82, 0.1);*/
     }
 }
 
@@ -228,7 +228,7 @@ a:focus {
 
 @media (min-width: 30em) {
     .responsive-table tbody td {
-        border-bottom: 1px solid #1d96b2;
+        /*border-bottom: 1px solid #1d96b2;*/
     }
     @media (min-width: 48em) {
         .responsive-table tbody td {
@@ -281,7 +281,7 @@ a:focus {
     #wrapper {
         position: relative;
         width: 100%;
-        height: 800px;
+        height: 700px;
         /*overflow: hidden;*/
         /* Prevent native touch events on Windows */
         -ms-touch-action: none;
@@ -341,14 +341,14 @@ a:focus {
     .rightof {
         float: right;
     }
-    hr {
+    /*hr {
         background: #f3f3f3;
         border: none;
         clear: both;
         float: none;
         height: 1px;
         width: 100%;
-    }
+    }*/
     /* Alignment */
     .align-center {
         text-align: center;
@@ -581,7 +581,7 @@ a:focus {
         margin: .5rem 0 0 -1.5rem;
         width: 28rem;
     }
-    .question {
+    /*.question {
         background-color: #5cc5ec;
         color: #fff;
         font-style: italic;
@@ -601,7 +601,7 @@ a:focus {
         left: 400px;
         width: 0;
         height: 0;
-    }
+    }*/
     #area-chart,
     #line-chart,
     #bar-chart,

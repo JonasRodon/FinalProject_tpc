@@ -1,0 +1,4390 @@
+[{
+	"_id" : ObjectId("58d3ab74ab37c4c02f163217"),
+	"keyName" : "Pd4",
+	"position" : {
+		"itpc" : "1",
+		"gitpc" : "2",
+		"posCol" : "1",
+		"posRow" : "1",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "pilar de quatre",
+		"esName" : "el pilar",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16321a"),
+	"keyName" : "Pd5",
+	"position" : {
+		"itpc" : "2",
+		"gitpc" : "4",
+		"posCol" : "1",
+		"posRow" : "2",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "pilar de cinc",
+		"esName" : "el pilar",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "135",
+		"Pointsdes" : "155",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16321d"),
+	"keyName" : "Pd6",
+	"position" : {
+		"itpc" : "3",
+		"gitpc" : "7",
+		"posCol" : "1",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "pilar de sis",
+		"esName" : "el pilar",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "8"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "425",
+		"Pointsdes" : "485",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163221"),
+	"keyName" : "Pd7f",
+	"position" : {
+		"itpc" : 4,
+		"gitpc" : 9,
+		"posCol" : "1",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "pilar de set amb folre",
+		"esName" : "el pilar",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "8"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "610",
+		"Pointsdes" : "695",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163226"),
+	"keyName" : "Pd8fm",
+	"position" : {
+		"itpc" : "5",
+		"gitpc" : "11",
+		"posCol" : "1",
+		"posRow" : "5",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "pilar de vuit amb folre i manilles",
+		"esName" : "el pilar",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "1395",
+		"Pointsdes" : "1605",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16322c"),
+	"keyName" : "Pd9fmp",
+	"position" : {
+		"itpc" : "6",
+		"gitpc" : "12",
+		"posCol" : "1",
+		"posRow" : "7",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "pilar de nou amb folre, manilles i puntals",
+		"esName" : "el pilar",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "2445",
+		"Pointsdes" : "2810",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16324c"),
+	"keyName" : "Pd4s",
+	"position" : {
+		"itpc" : "7",
+		"gitpc" : "14",
+		"posCol" : "2",
+		"posRow" : "1",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "pilar de quatre aixecat per sota",
+		"esName" : "el pilar",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "aixecat per sota",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16324e"),
+	"keyName" : "Pd5s",
+	"position" : {
+		"itpc" : "8",
+		"gitpc" : "15",
+		"posCol" : "2",
+		"posRow" : "2",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "pilar de cinc aixecat per sota",
+		"esName" : "el pilar",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "aixecat per sota",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163250"),
+	"keyName" : "Pd6s",
+	"position" : {
+		"itpc" : "9",
+		"gitpc" : "16",
+		"posCol" : "2",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "pilar de sis aixecat per sota",
+		"esName" : "el pilar",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "aixecat per sota",
+		"consTec" : "",
+		"gamma" : "8"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163270"),
+	"keyName" : "2d6",
+	"position" : {
+		"itpc" : "10",
+		"gitpc" : "25",
+		"posCol" : "3",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "dos de sis",
+		"esName" : "el dos o la torre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "120",
+		"Pointsdes" : "140",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163274"),
+	"keyName" : "2d7",
+	"position" : {
+		"itpc" : "11",
+		"gitpc" : "27",
+		"posCol" : "3",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "dos de set",
+		"esName" : "el dos o la torre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "385",
+		"Pointsdes" : "440",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163277"),
+	"keyName" : "2d8f",
+	"position" : {
+		"itpc" : "12",
+		"gitpc" : "29",
+		"posCol" : "3",
+		"posRow" : "5",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "dos de vuit amb folre",
+		"esName" : "el dos o la torre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "8"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "580",
+		"Pointsdes" : "665",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163278"),
+	"keyName" : "2d8",
+	"position" : {
+		"itpc" : "13",
+		"gitpc" : "30",
+		"posCol" : "3",
+		"posRow" : "6",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "dos de vuit",
+		"esName" : "el dos o la torre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "2065",
+		"Pointsdes" : "2395",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16327c"),
+	"keyName" : "2d9fm",
+	"position" : {
+		"itpc" : 2,
+		"gitpc" : "31",
+		"posCol" : "3",
+		"posRow" : "7",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "dos de nou amb folre i manilles",
+		"esName" : "el dos o la torre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "1330",
+		"Pointsdes" : "1530",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16327d"),
+	"keyName" : "2d9f",
+	"position" : {
+		"itpc" : "15",
+		"gitpc" : "32",
+		"posCol" : "3",
+		"posRow" : "8",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "dos de nou amb folre",
+		"esName" : "el dos o la torre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "2330",
+		"Pointsdes" : "2675",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1632a2"),
+	"keyName" : "2d6s",
+	"position" : {
+		"itpc" : "16",
+		"gitpc" : "36",
+		"posCol" : "4",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "dos de sis aixecat per sota",
+		"esName" : "el dos o la torre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "aixecat per sota",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1632a4"),
+	"keyName" : "2d7s",
+	"position" : {
+		"itpc" : "17",
+		"gitpc" : "37",
+		"posCol" : "4",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "dos de set aixecat per sota",
+		"esName" : "el dos o la torre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "aixecat per sota",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1632ab"),
+	"keyName" : "3d6",
+	"position" : {
+		"itpc" : "18",
+		"gitpc" : "41",
+		"posCol" : "5",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "tres de sis",
+		"esName" : "el tres",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1632ae"),
+	"keyName" : "3d7",
+	"position" : {
+		"itpc" : "19",
+		"gitpc" : "43",
+		"posCol" : "5",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "tres de set",
+		"esName" : "el tres",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : ""
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "185",
+		"Pointsdes" : "200",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1632b1"),
+	"keyName" : "3d8",
+	"position" : {
+		"itpc" : "20",
+		"gitpc" : "46",
+		"posCol" : "5",
+		"posRow" : "5",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "tres de vuit",
+		"esName" : "el tres",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "8"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "445",
+		"Pointsdes" : "510",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}
+Type "it" for more
+> it
+{
+	"_id" : ObjectId("58d3ab74ab37c4c02f1632b5"),
+	"keyName" : "3d9f",
+	"position" : {
+		"itpc" : "21",
+		"gitpc" : "47",
+		"posCol" : "5",
+		"posRow" : "7",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "tres de nou amb folre",
+		"esName" : "el tres",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "9"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "965",
+		"Pointsdes" : "1110",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1632b6"),
+	"keyName" : "3d9",
+	"position" : {
+		"itpc" : "22",
+		"gitpc" : "48",
+		"posCol" : "5",
+		"posRow" : "8",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "tres de nou",
+		"esName" : "el tres",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "2565",
+		"Pointsdes" : "2950",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1632ba"),
+	"keyName" : "3d10fm",
+	"position" : {
+		"itpc" : "23",
+		"gitpc" : "49",
+		"posCol" : "5",
+		"posRow" : "9",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "tres de deu amb folre i manilles",
+		"esName" : "el tres",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "2105",
+		"Pointsdes" : "2420",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1632de"),
+	"keyName" : "3d6a",
+	"position" : {
+		"itpc" : "24",
+		"gitpc" : "54",
+		"posCol" : "6",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "tres de sis amb l'agulla",
+		"esName" : "el tres",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1632e1"),
+	"keyName" : "3d7a",
+	"position" : {
+		"itpc" : "25",
+		"gitpc" : "56",
+		"posCol" : "6",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "tres de set amb l'agulla",
+		"esName" : "el tres",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "240",
+		"Pointsdes" : "265",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1632e4"),
+	"keyName" : "3d8a",
+	"position" : {
+		"itpc" : "26",
+		"gitpc" : "59",
+		"posCol" : "6",
+		"posRow" : "5",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "tres de vuit amb l'agulla",
+		"esName" : "el tres",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "8"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "730",
+		"Pointsdes" : "805",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1632e8"),
+	"keyName" : "3d9fa",
+	"position" : {
+		"itpc" : "27",
+		"gitpc" : "60",
+		"posCol" : "6",
+		"posRow" : "7",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "tres de nou amb folre amb l'agulla",
+		"esName" : "el tres",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "1680",
+		"Pointsdes" : "1855",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16330b"),
+	"keyName" : "3d6s",
+	"position" : {
+		"itpc" : "28",
+		"gitpc" : "64",
+		"posCol" : "7",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "tres de sis aixecat per sota",
+		"esName" : "el tres",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "aixecat per sota",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16330d"),
+	"keyName" : "3d7s",
+	"position" : {
+		"itpc" : "29",
+		"gitpc" : "66",
+		"posCol" : "7",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "tres de set aixecat per sota",
+		"esName" : "el tres",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "aixecat per sota",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "315",
+		"Pointsdes" : "335",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16330f"),
+	"keyName" : "3d8s",
+	"position" : {
+		"itpc" : "30",
+		"gitpc" : "68",
+		"posCol" : "7",
+		"posRow" : "5",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "tres de vuit aixecat per sota",
+		"esName" : "el tres",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "aixecat per sota",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "1325",
+		"Pointsdes" : "1460",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163318"),
+	"keyName" : "4d6",
+	"position" : {
+		"itpc" : "31",
+		"gitpc" : "71",
+		"posCol" : "8",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "quatre de sis",
+		"esName" : "el quatre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16331b"),
+	"keyName" : "4d7",
+	"position" : {
+		"itpc" : "32",
+		"gitpc" : "73",
+		"posCol" : "8",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "quatre de set",
+		"esName" : "el quatre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "175",
+		"Pointsdes" : "200",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16331e"),
+	"keyName" : "4d8",
+	"position" : {
+		"itpc" : "33",
+		"gitpc" : "76",
+		"posCol" : "8",
+		"posRow" : "5",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "quatre de vuit",
+		"esName" : "el quatre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "8"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "400",
+		"Pointsdes" : "460",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163322"),
+	"keyName" : "4d9f",
+	"position" : {
+		"itpc" : "34",
+		"gitpc" : "77",
+		"posCol" : "8",
+		"posRow" : "7",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "quatre de nou amb folre",
+		"esName" : "el quatre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "9"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "920",
+		"Pointsdes" : "1055",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163323"),
+	"keyName" : "4d9",
+	"position" : {
+		"itpc" : "35",
+		"gitpc" : "78",
+		"posCol" : "8",
+		"posRow" : "8",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "quatre de nou",
+		"esName" : "el quatre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "2015",
+		"Pointsdes" : "2315",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163327"),
+	"keyName" : "4d10fm",
+	"position" : {
+		"itpc" : "36",
+		"gitpc" : "79",
+		"posCol" : "8",
+		"posRow" : "9",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "quatre de deu amb folre i manilles",
+		"esName" : "el quatre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "2215",
+		"Pointsdes" : "2550",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16334b"),
+	"keyName" : "4d6a",
+	"position" : {
+		"itpc" : "37",
+		"gitpc" : "83",
+		"posCol" : "9",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "quatre de sis amb l'agulla",
+		"esName" : "el quatre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16334e"),
+	"keyName" : "4d7a",
+	"position" : {
+		"itpc" : "38",
+		"gitpc" : "84",
+		"posCol" : "9",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "quatre de set amb l'agulla",
+		"esName" : "el quatre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "250",
+		"Pointsdes" : "275",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163351"),
+	"keyName" : "4d8a",
+	"position" : {
+		"itpc" : "39",
+		"gitpc" : "86",
+		"posCol" : "9",
+		"posRow" : "5",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "quatre de vuit amb l'agulla",
+		"esName" : "el quatre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "8"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "700",
+		"Pointsdes" : "770",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163355"),
+	"keyName" : "4d9fa",
+	"position" : {
+		"itpc" : "40",
+		"gitpc" : "87",
+		"posCol" : "9",
+		"posRow" : "7",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "quatre de nou amb folre amb l'agulla",
+		"esName" : "el quatre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "1630",
+		"Pointsdes" : "1800",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}
+Type "it" for more
+> it
+{
+	"_id" : ObjectId("58d3ab74ab37c4c02f163378"),
+	"keyName" : "4d6s",
+	"position" : {
+		"itpc" : "41",
+		"gitpc" : "90",
+		"posCol" : "10",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "quatre de sis aixecat per sota",
+		"esName" : "el quatre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "aixecat per sota",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16337a"),
+	"keyName" : "4d7s",
+	"position" : {
+		"itpc" : "42",
+		"gitpc" : "91",
+		"posCol" : "10",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "quatre de set aixecat per sota",
+		"esName" : "el quatre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "aixecat per sota",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16337c"),
+	"keyName" : "4d8s",
+	"position" : {
+		"itpc" : "43",
+		"gitpc" : "92",
+		"posCol" : "10",
+		"posRow" : "5",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "quatre de vuit per sota",
+		"esName" : "el quatre",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "aixecat per sota",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163385"),
+	"keyName" : "5d6",
+	"position" : {
+		"itpc" : "44",
+		"gitpc" : "95",
+		"posCol" : "11",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "cinc de sis",
+		"esName" : "el cinc",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163388"),
+	"keyName" : "5d7",
+	"position" : {
+		"itpc" : "45",
+		"gitpc" : "97",
+		"posCol" : "11",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "cinc de set",
+		"esName" : "el cinc",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "265",
+		"Pointsdes" : "305",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16338b"),
+	"keyName" : "5d8",
+	"position" : {
+		"itpc" : "46",
+		"gitpc" : "100",
+		"posCol" : "11",
+		"posRow" : "5",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "cinc de vuit",
+		"esName" : "el cinc",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "8"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "640",
+		"Pointsdes" : "735",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16338f"),
+	"keyName" : "5d9f",
+	"position" : {
+		"itpc" : "47",
+		"gitpc" : "101",
+		"posCol" : "11",
+		"posRow" : "7",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "cinc de nou amb folre",
+		"esName" : "el cinc",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "extra"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "1515",
+		"Pointsdes" : "1740",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1633b2"),
+	"keyName" : "5d6a",
+	"position" : {
+		"itpc" : "48",
+		"gitpc" : "106",
+		"posCol" : "12",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "cinc de sis amb l'agulla",
+		"esName" : "el cinc",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1633b5"),
+	"keyName" : "5d7a",
+	"position" : {
+		"itpc" : "49",
+		"gitpc" : "108",
+		"posCol" : "12",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "cinc de set amb l'agulla",
+		"esName" : "el cinc",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "310",
+		"Pointsdes" : "330",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1633b8"),
+	"keyName" : "5d8a",
+	"position" : {
+		"itpc" : "50",
+		"gitpc" : "110",
+		"posCol" : "12",
+		"posRow" : "5",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "cinc de vuit amb l'agulla",
+		"esName" : "el cinc",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "8"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "765",
+		"Pointsdes" : "845",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1633d9"),
+	"keyName" : "6d6",
+	"position" : {
+		"itpc" : "51",
+		"gitpc" : "114",
+		"posCol" : "13",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "sis de sis",
+		"esName" : "el sis",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1633dc"),
+	"keyName" : "6d7",
+	"position" : {
+		"itpc" : "52",
+		"gitpc" : "116",
+		"posCol" : "13",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "sis de set",
+		"esName" : "el sis",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163409"),
+	"keyName" : "6d7a",
+	"position" : {
+		"itpc" : "53",
+		"gitpc" : "122",
+		"posCol" : "14",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "sis de set amb l'agulla",
+		"esName" : "el sis",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l’agulla",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163550"),
+	"keyName" : "7d6",
+	"position" : {
+		"itpc" : "54",
+		"gitpc" : "130",
+		"posCol" : "15",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "set de sis",
+		"esName" : "el set",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163553"),
+	"keyName" : "7d7",
+	"position" : {
+		"itpc" : "55",
+		"gitpc" : "132",
+		"posCol" : "15",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "set de set",
+		"esName" : "el set",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "250",
+		"Pointsdes" : "290",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163556"),
+	"keyName" : "7d8",
+	"position" : {
+		"itpc" : "56",
+		"gitpc" : "133",
+		"posCol" : "15",
+		"posRow" : "5",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "set de vuit",
+		"esName" : "el set",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "8"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "550",
+		"Pointsdes" : "635",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16355a"),
+	"keyName" : "7d9f",
+	"position" : {
+		"itpc" : "57",
+		"gitpc" : "134",
+		"posCol" : "15",
+		"posRow" : "7",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "set de nou amb folre",
+		"esName" : "el set",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : ""
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "1465",
+		"Pointsdes" : "1685",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16357d"),
+	"keyName" : "7d6a",
+	"position" : {
+		"itpc" : "58",
+		"gitpc" : "137",
+		"posCol" : "16",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "set de sis amb l'agulla",
+		"esName" : "el set",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163580"),
+	"keyName" : "7d7a",
+	"position" : {
+		"itpc" : "59",
+		"gitpc" : "139",
+		"posCol" : "16",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "set de set amb l'agulla",
+		"esName" : "el set",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "300",
+		"Pointsdes" : "320",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163583"),
+	"keyName" : "7d8a",
+	"position" : {
+		"itpc" : "60",
+		"gitpc" : "140",
+		"posCol" : "16",
+		"posRow" : "5",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "set de vuit amb l'agulla",
+		"esName" : "el set",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l'agulla",
+		"consTec" : "",
+		"gamma" : "8"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "740",
+		"Pointsdes" : "815",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}
+Type "it" for more
+> it
+{
+	"_id" : ObjectId("58d3ab74ab37c4c02f1635a4"),
+	"keyName" : "7d6aa",
+	"position" : {
+		"itpc" : "61",
+		"gitpc" : "143",
+		"posCol" : "17",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "set de sis amb dues agulles",
+		"esName" : "el set",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb dues agulles",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1635a7"),
+	"keyName" : "7d7aa",
+	"position" : {
+		"itpc" : "62",
+		"gitpc" : "145",
+		"posCol" : "17",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "set de set amb dues agulles",
+		"esName" : "el set",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb dues agulles",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1635cb"),
+	"keyName" : "8d6",
+	"position" : {
+		"itpc" : "63",
+		"gitpc" : "148",
+		"posCol" : "18",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "vuit de sis",
+		"esName" : "el vuit",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1635ce"),
+	"keyName" : "8d7",
+	"position" : {
+		"itpc" : "64",
+		"gitpc" : "150",
+		"posCol" : "18",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : "7"
+	},
+	"details" : {
+		"name" : "vuit de set",
+		"esName" : "el vuit",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : ""
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1635f8"),
+	"keyName" : "8d6a",
+	"position" : {
+		"itpc" : "65",
+		"gitpc" : "153",
+		"posCol" : "19",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "vuit de sis amb l'agulla",
+		"esName" : "el vuit",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l’agulla",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f1635fc"),
+	"keyName" : "8d7a",
+	"position" : {
+		"itpc" : "66",
+		"gitpc" : "155",
+		"posCol" : "19",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "vuit de set amb l'agulla",
+		"esName" : "el vuit",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "amb l’agulla",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163716"),
+	"keyName" : "9d6",
+	"position" : {
+		"itpc" : "67",
+		"gitpc" : "163",
+		"posCol" : "20",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "nou de sis",
+		"esName" : "el nou",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "165",
+		"Pointsdes" : "190",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163719"),
+	"keyName" : "9d7",
+	"position" : {
+		"itpc" : "68",
+		"gitpc" : "165",
+		"posCol" : "20",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "nou de set",
+		"esName" : "el nou",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "365",
+		"Pointsdes" : "420",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16371c"),
+	"keyName" : "9d8",
+	"position" : {
+		"itpc" : "69",
+		"gitpc" : "166",
+		"posCol" : "20",
+		"posRow" : "5",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "nou de vuit",
+		"esName" : "el nou",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : ""
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "1210",
+		"Pointsdes" : "1390",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163812"),
+	"keyName" : "10d6",
+	"position" : {
+		"itpc" : "70",
+		"gitpc" : "174",
+		"posCol" : "21",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "deu de sis",
+		"esName" : "el deu",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f163815"),
+	"keyName" : "10d7",
+	"position" : {
+		"itpc" : "71",
+		"gitpc" : "176",
+		"posCol" : "21",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "deu de set",
+		"esName" : "el deu",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16395c"),
+	"keyName" : "12d6",
+	"position" : {
+		"itpc" : "72",
+		"gitpc" : "189",
+		"posCol" : "22",
+		"posRow" : "3",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "dotze de sis",
+		"esName" : "el dotze",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "6"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}, {
+	"_id" : ObjectId("58d3ab74ab37c4c02f16395f"),
+	"keyName" : "12d7",
+	"position" : {
+		"itpc" : "73",
+		"gitpc" : "191",
+		"posCol" : "22",
+		"posRow" : "4",
+		"gposCol" : "",
+		"gposRow" : ""
+	},
+	"details" : {
+		"name" : "dotze de set",
+		"esName" : "el dotze",
+		"tumbNailSrc" : "",
+		"esDescription" : "",
+		"esType" : "bàsic",
+		"consTec" : "",
+		"gamma" : "7"
+	},
+	"parts" : {
+		"pinya" : "",
+		"tronc" : "",
+		"pom" : "",
+		"folre" : "",
+		"manilles" : ""
+	},
+	"score" : {
+		"Pointscar" : "sense puntuació",
+		"Pointsdes" : "sense puntuació",
+		"group" : "",
+		"subGroup" : ""
+	},
+	"metrics" : {
+		"numCollDes" : "",
+		"firstCollCar" : "",
+		"numCollIn" : ""
+	},
+	"hOld" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"hNew" : {
+		"yearCasCar" : "",
+		"firstCollCar" : "",
+		"yearCasDes" : "",
+		"firstCollDes" : ""
+	},
+	"imgScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	},
+	"vidScr" : {
+		"number" : "",
+		"name" : "",
+		"src" : ""
+	}
+}]
