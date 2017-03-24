@@ -123,3 +123,4 @@ function ajustingText(n) {
             return total
         }
     }
+}
