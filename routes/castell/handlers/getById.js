@@ -86,6 +86,11 @@ function parts(p) {
     }
 }
 
+function nameAjust(n) {
+    var total = n.replace('d', '-d-').replace('f', '-f').replace('m', '-m').replace('p', '-p')
+    return total
+}
+
 function ajustingText(n) {
     n = nameAjust(n)
     n = n.split('-')
@@ -118,9 +123,5 @@ function ajustingText(n) {
             }
         }
 
-        function nameAjust(n) {
-            var total = n.replace('d', '-d-').replace('f', '-f').replace('m', '-m').replace('p', '-p')
-            return total
-        }
     }
 }
